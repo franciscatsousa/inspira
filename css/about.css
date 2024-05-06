@@ -1,0 +1,312 @@
+/*-------------------------------------------navbar-------------------------------------------*/
+
+nav {
+  padding: 1.25rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 4.375rem;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0.625rem 1.25rem;
+}
+
+nav ul li a {
+  color: #202020;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 0.1875rem;
+  background: #e61854;
+  position: absolute;
+  left: 0;
+  bottom: -0.375rem;
+  transition: 0.4s;
+}
+
+nav ul li a:hover {
+  color: #e61854;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  color: #e61854;
+  font-weight: bold;
+}
+
+/*-------------------------------------------section 1-------------------------------------------*/
+
+#about-section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 6% 10%;
+}
+
+#about-section1 h1 {
+  font-family: roboto-mono-bold;
+  font-size: 46px;
+}
+
+#about-section1 h1 .underline {
+  font-family: roboto-mono-bold;
+  text-decoration: underline 0.22rem #1e4798;
+}
+
+#about-section1 .objetivos {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: roboto-regular;
+  font-size: 17px;
+  line-height: 20px;
+  gap: 5rem;
+}
+
+#about-section1 .objetivos > div {
+  width: 28%;
+}
+
+.objetivos-texto {
+  margin-top: 6%;
+}
+
+#about-section1 h5 {
+  font-family: roboto-mono-light;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#about-section1 h5 span {
+  font-family: roboto-mono-medium;
+  text-decoration: underline 0.22rem #1e4798;
+}
+
+/*-------------------------------------------section 2-------------------------------------------*/
+
+#about-carousel{
+  position: relative;
+}
+
+#about-carousel .slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  gap: 5rem;
+}
+
+#about-carousel .slide img {
+  width: 100%;
+  padding-left: 2%;
+}
+
+.slide .dir {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 2rem;
+}
+
+.slide .dir .title {
+  font-family: roboto-mono-bold;
+  font-size: 46px;
+  line-height: 51px;
+}
+
+.slide .dir .sentence {
+  font-family: roboto-mono-light;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #1e4798;
+}
+
+.slide .dir .text {
+  font-family: roboto-regular;
+  font-size: 17px;
+  line-height: 20px;
+  width: 90%;
+}
+
+.button {
+  display: block;
+  margin: 1.25rem 0;
+  width: fit-content;
+  border: 0.09375rem solid #1e4798;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.625rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1e4798;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  color: #f2f2f2;
+  background: #1e4798;
+}
+
+#prevButton, #nextButton {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  cursor: pointer;
+}
+
+#prevButton {
+  left: 10%;
+}
+
+#nextButton {
+  right: 10%;
+}
+
+/*-------------------------------------------section 6-------------------------------------------*/
+
+#about-section6 {
+  display: flex;
+  color: #202020;
+  align-items: center;
+  gap: 7rem;
+  padding: 10% 15% 0 15%;
+}
+
+.esq6 img {
+  width: 100%;
+}
+
+.direita6 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.direita6 .titles h5 {
+  margin-top: 1rem;
+  font-family: roboto-mono-light;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.direita6 h2 {
+  font-family: roboto-mono-bold;
+  font-size: 46px;
+  line-height: 51px;
+}
+
+.direita6 .section6-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.section6-buttons .button6 {
+  display: block;
+  margin: 1.25rem 0;
+  width: fit-content;
+  border: 0.09375rem solid #f5c607;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.625rem;
+  text-decoration: none;
+  font-family: roboto-mono-regular;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f5c607;
+  transition: background 0.3s;
+}
+
+.button6:hover {
+  color: #f2f2f2;
+  background: #f5c607;
+}
+
+#about-section6 .direita6 .titles-bottom h5 {
+  font-family: roboto-mono-light;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#about-section6 .titles-bottom .bold6 {
+  font-family: roboto-mono-bold;
+  text-decoration: underline 0.22rem #f5c607;
+}
+
+/*-------------------------------------------footer------------------------------------------*/
+
+#about-footer {
+  display: flex;
+  align-items: center;
+  gap: 30rem;
+}
+
+#about-footer .title {
+  width: 10%;
+}
+
+#about-footer .title h3 {
+  font-family: roboto-mono-regular;
+  font-size: 46px;
+  color: #1e4798;
+}
+
+#about-footer .links {
+  display: flex;
+  gap: 5rem;
+}
+
+#about-footer .links .pages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+#about-footer .links a {
+  text-decoration: none;
+  color: #202020;
+  font-family: roboto-mono-regular;
+  font-variant: small-caps;
+  font-size: 17px;
+}
+
+#about-footer .links a:hover {
+  font-weight: bold;
+  color: #1e4798;
+}
+
+#about-footer .links .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.social-media .button-footer {
+  display: block;
+  margin: 4rem 0;
+  width: fit-content;
+  border: 0.09375rem solid #1e4798;
+  padding: 0.2rem 1rem;
+  border-radius: 0.625rem;
+  text-decoration: none;
+  color: #1e4798;
+  transition: background 0.3s;
+}
+
+#about-footer .social-media .button-footer {
+  color: #1e4798;
+  font-size: 15px;
+}
+
+#about-footer .social-media .button-footer:hover {
+  color: #f2f2f2;
+  background: #1e4798;
+}
