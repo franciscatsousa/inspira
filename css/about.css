@@ -95,7 +95,7 @@ nav ul li a:hover::after {
 
 /*-------------------------------------------section 2-------------------------------------------*/
 
-#about-carousel{
+#about-carousel {
   position: relative;
 }
 
@@ -115,7 +115,7 @@ nav ul li a:hover::after {
 .slide .dir {
   display: flex;
   flex-direction: column;
-  
+
   gap: 2rem;
 }
 
@@ -157,11 +157,21 @@ nav ul li a:hover::after {
   background: #1e4798;
 }
 
-#prevButton, #nextButton {
+#prevButton,
+#nextButton {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
+  width: 50px;
+  height: 50px; /* Set the same height as width to make it a circle */
+  border: 2px solid #1e4798;
+  border-radius: 50%;
   cursor: pointer;
+  display: flex; /* Flexbox to center the image inside */
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  transition: top 0.5s;
 }
 
 #prevButton {
@@ -170,6 +180,35 @@ nav ul li a:hover::after {
 
 #nextButton {
   right: 10%;
+}
+
+#prevButton:hover,
+#nextButton:hover{
+  background: rgba(30, 71, 152, 0.1);
+  top: 49.5%;
+}
+
+.carousel-dots {
+  display: flex; /* Ensure it's a block-level element */
+  width: 100%; /* Ensure it spans the entire width */
+  margin: 1.5rem 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  justify-content: center; /* Center its children horizontally */
+}
+
+.dot {
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #1e4798;
+  transition: background-color 0.2s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #1e4798;
 }
 
 /*-------------------------------------------section 6-------------------------------------------*/
@@ -245,7 +284,7 @@ nav ul li a:hover::after {
 
 #about-footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 30rem;
 }
 

@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
     const dotsContainer = document.querySelector('.carousel-dots');
