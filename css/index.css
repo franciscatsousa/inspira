@@ -169,7 +169,7 @@ nav ul li a:hover::after {
   width: 95%;
 }
 
-.sentence {
+#index-section2 .sentence {
   font-family: roboto-mono-light;
   text-transform: uppercase;
   font-size: 1.125rem;
@@ -340,7 +340,6 @@ nav ul li a:hover::after {
 .slide .dir {
   display: flex;
   flex-direction: column;
-
   gap: 2rem;
 }
 
@@ -350,10 +349,14 @@ nav ul li a:hover::after {
   line-height: 51px;
 }
 
-.slide .dir .sentence {
+#about-carousel .slide .dir .sentence {
   font-family: roboto-mono-light;
   font-size: 20px;
   text-transform: uppercase;
+  color: #1e4798;
+}
+
+#about-carousel .slide .dir .blue-sentence {
   color: #1e4798;
 }
 

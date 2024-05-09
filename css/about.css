@@ -183,7 +183,7 @@ nav ul li a:hover::after {
 }
 
 #prevButton:hover,
-#nextButton:hover{
+#nextButton:hover {
   background: rgba(30, 71, 152, 0.1);
   top: 49.5%;
 }
@@ -209,6 +209,80 @@ nav ul li a:hover::after {
 .active,
 .dot:hover {
   background-color: #1e4798;
+}
+
+/*-------------------------------------------section 3-------------------------------------------*/
+
+#about-section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 10% 0;
+}
+
+#about-section3 .title {
+  text-align: center;
+  font-family: roboto-mono-bold;
+  font-size: 46px;
+}
+
+#about-section3 .capitaleblue {
+  font-family: roboto-mono-bold;
+  color: #1e4798;
+  text-transform: uppercase;
+}
+
+#about-section3 .team-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-section3 .team {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+}
+
+#about-section3 .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#about-section3 .member-name {
+  font-family: roboto-mono-regular;
+  font-size: 15px;
+  line-height: 20px;
+  color: #1e4798;
+  text-transform: uppercase;
+  max-width: 68%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#about-section3 .blue-dir-container,
+#about-section3 .blue-esq-container {
+  position: relative;
+}
+
+#about-section3 .blue-dir,
+#about-section3 .blue-esq {
+  position: absolute;
+}
+
+#about-section3 .blue-esq {
+  left: -10vw;
+  top: -8vh;
+  width: 18.75rem;
+}
+
+#about-section3 .blue-dir {
+  left: -10vw;
+  top: 30vh;
+  width: 18.75rem;
 }
 
 /*-------------------------------------------section 6-------------------------------------------*/
