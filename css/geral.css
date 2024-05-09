@@ -30,21 +30,7 @@
   box-sizing: border-box;
 }
 
-.spacer-hero {
-  padding: 3% 10%;
-}
 
-.spacer1 {
-  padding: 10% 10%;
-}
-
-.spacer2 {
-  padding: 10% 15%;
-}
-
-.spacer-footer {
-  padding: 10% 15% 0 15%;
-}
 
 body {
   background-color: #f2f2f2;

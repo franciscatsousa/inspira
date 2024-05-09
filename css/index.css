@@ -46,12 +46,13 @@ nav ul li a:hover::after {
   font-weight: bold;
 }
 
-/*-------------------------------------section1-------------------------------------*/
+/*-------------------------------------section1/hero-------------------------------------*/
 
 #index-section1 {
   display: flex;
   align-items: center;
   gap: 10rem;
+  padding: 3% 10% 8% 10%;
 }
 
 #index-section1 .header-text h1 {
@@ -122,6 +123,7 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8% 10% 8% 10%;
 }
 
 .esq {
@@ -201,6 +203,7 @@ nav ul li a:hover::after {
   justify-content: space-between;
   align-items: center;
   gap: 10rem;
+  padding: 8% 15% 8% 15%;
 }
 
 .esq3 {
@@ -283,7 +286,7 @@ nav ul li a:hover::after {
   color: #1e4798;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 6rem 0 7rem 15%;
+  padding: 8% 0 8% 15%;
   gap: 7rem;
 }
 
@@ -322,6 +325,7 @@ nav ul li a:hover::after {
 
 #about-carousel {
   position: relative;
+  padding: 15% 10% 10% 10%;
 }
 
 #about-carousel .slide {
@@ -446,7 +450,7 @@ nav ul li a:hover::after {
   color: #202020;
   align-items: center;
   gap: 7rem;
-  padding: 10% 15% 0 15%;
+  padding: 8% 15% 0 15%;
 }
 
 .esq6 img {
@@ -514,6 +518,8 @@ nav ul li a:hover::after {
   display: flex;
   align-items: flex-start;
   gap: 30rem;
+  padding: 12% 15% 0 16%;
+
 }
 
 #index-footer .title {
