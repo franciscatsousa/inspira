@@ -363,7 +363,6 @@ nav ul li a:hover::after {
 
 .logos-slide {
   display: inline-block;
-
   animation: 30s slide infinite linear;
 }
 .logos-slide img {
