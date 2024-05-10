@@ -47,3 +47,117 @@ nav ul li a:hover::after {
 }
 
 /*-------------------------------------section 2-------------------------------------*/
+
+
+#about-carousel{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#about-carousel .carousel-container{
+    display: flex;
+    padding: 8% 10% 0 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-carousel .slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5rem
+}
+
+#about-carousel .slide img{
+    width: 450px;
+    
+}
+
+#about-carousel .content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 390px;
+}
+
+#about-carousel .content .title{
+    font-family: roboto-mono-bold;
+    font-size: 46px;
+    line-height: 51px;
+    color:#1E4798;
+}
+
+#about-carousel .content .sentence{
+    font-family:roboto-mono-light;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #1E4798;
+}
+
+#about-carousel .content .text{
+    font-size: 17px;
+    line-height: 20px;
+}
+
+#about-carousel .content .text span{
+    color: #1E4798;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  border: 0.09375rem solid #1e4798;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.625rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1e4798;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  color: #f2f2f2;
+  background: #1e4798;
+}
+
+#prevButton,
+#nextButton {
+  border: 2px solid #1e4798;
+  padding: 0.5%;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex; /* Flexbox to center the image inside */
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  transition: top 0.5s;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+  background: rgba(30, 71, 152, 0.1);
+}
+
+.carousel-dots {
+  display: flex; /* Ensure it's a block-level element */
+  width: 100%; /* Ensure it spans the entire width */
+  padding: 0; /* Remove any padding */
+  justify-content: center; /* Center its children horizontally */
+}
+
+.dot {
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #1e4798;
+  transition: background-color 0.2s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #1e4798;
+}
+
