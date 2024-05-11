@@ -9,7 +9,9 @@
   </head>
 
   <body>
-    <!------------ navbar ------------>
+
+   <!--------------------------------------------- navbar --------------------------------------------->
+
     <header>
       <nav>
         <a href="index.html"
@@ -23,7 +25,7 @@
           <li><a href="activities.html">activities</a></li>
           <li><a href="mentor.html">be a mentor</a></li>
           <li><a href="#">be a mentee</a></li>
-          <li><a href="#">how to</a></li>
+          <li><a href="howto.html">how to</a></li>
           <li><a href="#">contacts</a></li>
         </ul>
       </nav>
@@ -46,7 +48,7 @@
     </div>
 </div>
 
-    <!------------ section 2 ------------>
+    <!------------------------------------------------ section 2 ------------------------------------------------>
 
 <div id="index-section2">
   <div class="foto">
@@ -73,7 +75,7 @@
 
 </div>
 
-    <!------------ section 3 ------------>
+   <!--------------------------------------------- section 3 --------------------------------------------->
 
     <div id="index-section3" class="spacer2">
       <div class="esq3">
@@ -125,7 +127,7 @@
       </div>
     </div>
 
-    <!------------ section 4 ------------>
+   <!--------------------------------------------- section 4 --------------------------------------------->
 
     <div id="index-section4" class="spacer2">
       <div class="esq4">
@@ -165,70 +167,59 @@
       </div>
     </div>
 
-    <!------------ section 5 ------------>
+   <!--------------------------------------------- section 5 --------------------------------------------->
 
-    <div id="about-carousel" class="spacer1">
-      <div class="slide">
-        <img
-          src="imgs/insta-posts.svg"
-          alt="composição dos posts do instagram do Inspira"
-        />
-        <div class="dir">
-          <div class="title">If you're not convinced yet</div>
-          <div class="sentence">Wel'll show you our instagram</div>
-          <div class="text">
-            Our Instagram feed offers from spotlighting historical and
-            contemporary women in tech, to explaining how our program works and
-            announcing our events, we cover it all. <br />
-            <br />
-            We also share statistics about women in the tech field to underscore
-            the importance of our mission. Additionally, we address common
-            questions from students, fostering dialogue and understanding.
-            Follow us for a mix of inspiration and information!
-          </div>
-          <a href="#" class="button">our instagram</a>
-        </div>
-      </div>
-      <div class="slide">
-        <img
-          src="imgs/youtube.svg"
-          alt="composição dos testemunhos em formato vídeo do youtube do inspira"
-        />
-        <div class="dir">
-          <div class="title">If you're not convinced yet</div>
-          <div class="sentence">We'll show you our youtube</div>
-          <div class="text">
-            Our YouTube channel showcases testimonials from diverse
-            professionals and academics, addressing the common query of which
-            trajectory to pursue in the tech field. These firsthand experiences
-            may offer insights and guidance. Additionally, we delve into
-            discussions about the presence of female talent in informatics.
-            <br /><br />
-            <span class="blue-sentence"
-              >Join us as we navigate career paths and explore opportunities in
-              the tech industry!</span
-            >
-          </div>
-          <a href="#" class="button">our youtube</a>
-        </div>
-      </div>
+    <div id="index-carousel" class="spacer1">
+      <div class="carousel-container">
+          <button id="prevButton">
+              <img src="imgs/arrow-left.svg" alt="botão com seta para voltar atrás no carousel" />
+          </button>
 
-      <button id="prevButton">
-        <img
-          src="imgs/arrow-left.svg"
-          alt="botão com seta para voltar atrás no carousel"
-        />
-      </button>
-      <button id="nextButton">
-        <img
-          src="imgs/arrow-right.svg"
-          alt="botão com seta para ir para a frente no carousel"
-        />
-      </button>
+          <div class="slide">
+              <img src="imgs/insta-posts.svg" alt="composição dos posts do instagram do Inspira" />
+              <div class="content">
+                  <div class="title">If you're not convinced yet</div>
+                  <div class="sentence">Wel'll show you our instagram</div>
+                  <div class="text">
+                      Our Instagram feed offers from spotlighting historical and
+                      contemporary women in tech, to explaining how our program works and
+                      announcing our events, we cover it all. <br />
+                      <br />
+                      We also share statistics about women in the tech field to underscore
+                      the importance of our mission. Additionally, we address common
+                      questions from students, fostering dialogue and understanding.
+                      <br><br> <span>Follow us for a mix of inspiration and information!</span>
+                  </div>
+                  <a href="#" class="button">our instagram</a>
+              </div>
+          </div>
+
+          <div class="slide">
+              <img src="imgs/youtube.svg" alt="composição dos posts do instagram do Inspira" />
+              <div class="content">
+                  <div class="title">If you're not convinced yet</div>
+                  <div class="sentence">we’ll show our youtube</div>
+                  <div class="text">
+                      Our YouTube channel showcases testimonials from diverse professionals and academics, addressing
+                      the common query of which trajectory to pursue in the tech field. These firsthand experiences
+                      may offer insights and guidance. <br><br>Additionally, we delve into discussions about the presence of
+                      female talent in informatics.
+                      <br><br> <span>Join us as we navigate career paths and explore opportunities in the tech
+                          industry!</span>
+                  </div>
+                  <a href="#" class="button">our youtube</a>
+              </div>
+          </div>
+
+
+          <button id="nextButton">
+              <img src="imgs/arrow-right.svg" alt="botão com seta para ir para a frente no carousel" />
+          </button>
+      </div>
       <div class="carousel-dots"></div>
-    </div>
+  </div>
 
-    <!------------ section 6 ------------>
+   <!--------------------------------------------- section 6 --------------------------------------------->
 
     <div id="index-section6" class="spacer2">
       <div class="esq6">
@@ -256,16 +247,15 @@
       </div>
     </div>
 
-    <!------------ footer ------------>
+   <!--------------------------------------------- footer --------------------------------------------->
 
-    <div id="index-footer" class="spacer-footer">
-      <div class="title">
-        <h3>Feeling Inspired Yet?</h3>
-      </div>
+  <div id="index-footer-container" class="spacer-footer">
+    <div class="index-footer">
+      <h2>Feeling Inspired Yet?</h2>
       <div class="links">
         <div class="pages">
-          <a href="#">home</a>
-          <a href="#">about</a>
+          <a href="index.html">home</a>
+          <a href="about.html">about</a>
           <a href="#">activities</a>
           <a href="#">be a mentor</a>
           <a href="#">be a mentee</a>
@@ -281,6 +271,8 @@
         </div>
       </div>
     </div>
+    <div class="blue-line"></div>
+  </div>
 
     <script src="js/index.js"></script>
   </body>

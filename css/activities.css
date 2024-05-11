@@ -196,15 +196,20 @@ nav ul li a:hover::after {
 }
 
 /*-------------------------------------------footer------------------------------------------*/
+#activities-footer-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
-#activities-footer {
+.activities-footer {
   display: flex;
   align-items: flex-start;
   gap: 17.5rem;
   padding: 8% 15% 5% 15%;
 }
 
-#activities-footer h2 {
+.activities-footer h2 {
   font-family: roboto-mono-regular;
   color: #1e4798;
   font-size: 46px;
@@ -212,24 +217,24 @@ nav ul li a:hover::after {
   width: 30%;
 }
 
-#activities-footer .links {
+.activities-footer .links {
   display: flex;
   gap: 6rem;
 }
 
-#activities-footer .links .pages {
+.activities-footer .links .pages {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-#activities-footer .links .social-media {
+.activities-footer .links .social-media {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-#activities-footer .links .pages a,
+.activities-footer .links .pages a,
 .social-media a {
   text-decoration: none;
   font-family: roboto-mono-regular;
@@ -238,7 +243,7 @@ nav ul li a:hover::after {
   font-size: 15px;
 }
 
-#activities-footer .links .pages a:hover,
+.activities-footer .links .pages a:hover,
 .social-media a:hover{
     font-family: roboto-mono-medium;
     color: #1e4798;
@@ -255,8 +260,16 @@ nav ul li a:hover::after {
     transition: background 0.3s;
   }
   
-  #activities-footer .social-media .button-footer:hover {
+  .activities-footer .social-media .button-footer:hover {
     font-family: roboto-mono-regular;
     color: #f2f2f2;
     background: #1e4798;
+  }
+
+  #activities-footer-container .blue-line{
+    position: absolute;
+    bottom: 0;
+    height:15px;
+    width: 100%;
+    background-color: #1e4798;
   }

@@ -95,129 +95,117 @@ nav ul li a:hover::after {
 
 /*-------------------------------------------section 2-------------------------------------------*/
 
-#about-carousel {
-  position: relative;
-  padding: 8% 10% 8% 10%;
-}
-
-#about-carousel .slide {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  gap: 5rem;
-}
-
-#about-carousel .slide img {
-  width: 300px;
-  padding-left: 0.5rem;
-}
-
-.slide .dir {
+#about-carousel{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  width: 300px;
-
+  gap: 3rem;
 }
 
-.slide .dir .title {
+#about-carousel .carousel-container{
+  display: flex;
+  padding: 8% 10% 0 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about-carousel .slide{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:5rem
+}
+
+#about-carousel .slide img{
+  width: 450px;
+  
+}
+
+#about-carousel .content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 390px;
+}
+
+#about-carousel .content .title{
   font-family: roboto-mono-bold;
   font-size: 46px;
   line-height: 51px;
-  width: 90%;
 }
 
-.slide .dir .sentence {
-  font-family: roboto-mono-light;
+#about-carousel .content .sentence{
+  font-family:roboto-mono-light;
   font-size: 20px;
   text-transform: uppercase;
-  color: #e34511;
-  width: 70%;
-
+  color: #E34511;
 }
 
-.slide .dir .text {
-  font-family: roboto-regular;
+#about-carousel .content .text{
   font-size: 17px;
   line-height: 20px;
-  width: 85%;
 }
 
-.slide .dir span{
-  color: #e34511;
+#about-carousel .content .text span{
+  color: #E34511;
 }
 
 .button {
-  display: block;
-  width: fit-content;
-  border: 0.09375rem solid #e34511;  ;
-  padding: 0.625rem 1.875rem;
-  border-radius: 0.625rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #e34511;
-  transition: background 0.3s;
+display: block;
+width: fit-content;
+border: 0.09375rem solid #E34511;
+padding: 0.625rem 1.875rem;
+border-radius: 0.625rem;
+text-decoration: none;
+text-transform: uppercase;
+color: #E34511;
+transition: background 0.3s;
 }
 
 .button:hover {
-  color: #f2f2f2;
-  background: #e34511;
+color: #f2f2f2;
+background: #E34511;
 }
 
 #prevButton,
 #nextButton {
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  width: 50px;
-  height: 50px; /* Set the same height as width to make it a circle */
-  border: 2px solid #1e4798;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex; /* Flexbox to center the image inside */
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s;
-  transition: top 0.5s;
-}
-
-#prevButton {
-  left: 10%;
-}
-
-#nextButton {
-  right: 10%;
+border: 2px solid #1e4798;
+padding: 0.5%;
+border-radius: 50%;
+cursor: pointer;
+display: flex; /* Flexbox to center the image inside */
+align-items: center;
+justify-content: center;
+transition: background 0.3s;
+transition: top 0.5s;
 }
 
 #prevButton:hover,
 #nextButton:hover {
-  background: rgba(30, 71, 152, 0.1);
-  top: 49.5%;
+background: rgba(30, 71, 152, 0.1);
 }
 
 .carousel-dots {
-  display: flex; /* Ensure it's a block-level element */
-  width: 100%; /* Ensure it spans the entire width */
-  margin: 1.5rem 0; /* Remove any margin */
-  padding: 0; /* Remove any padding */
-  justify-content: center; /* Center its children horizontally */
+display: flex; /* Ensure it's a block-level element */
+width: 100%; /* Ensure it spans the entire width */
+padding: 0; /* Remove any padding */
+justify-content: center; /* Center its children horizontally */
 }
 
 .dot {
-  height: 0.8rem;
-  width: 0.8rem;
-  margin: 0 0.2rem;
-  border-radius: 50%;
-  display: inline-block;
-  border: 1px solid #1e4798;
-  transition: background-color 0.2s ease;
+height: 0.8rem;
+width: 0.8rem;
+margin: 0 0.2rem;
+border-radius: 50%;
+display: inline-block;
+border: 1px solid #1e4798;
+transition: background-color 0.2s ease;
 }
 
 .active,
 .dot:hover {
-  background-color: #1e4798;
+background-color: #1e4798;
 }
+
 
 /*-------------------------------------------section 3-------------------------------------------*/
 
@@ -445,68 +433,64 @@ nav ul li a:hover::after {
 #about-footer {
   display: flex;
   align-items: flex-start;
-  gap: 30rem;
-  padding: 12% 15% 0 16%;
+  gap: 17.5rem;
+  padding: 8% 15% 5% 15%;
 }
 
-#about-footer .title {
-  width: 10%;
-}
-
-#about-footer .title h3 {
+#about-footer h2 {
   font-family: roboto-mono-regular;
-  font-size: 46px;
   color: #1e4798;
+  font-size: 46px;
+  line-height: 51px;
+  width: 30%;
 }
 
 #about-footer .links {
   display: flex;
-  gap: 5rem;
+  gap: 6rem;
 }
 
 #about-footer .links .pages {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
-}
-
-#about-footer .links a {
-  text-decoration: none;
-  color: #202020;
-  font-family: roboto-mono-regular;
-  font-variant: small-caps;
-  font-size: 17px;
-}
-
-#about-footer .links a:hover {
-  font-weight: bold;
-  color: #1e4798;
+  gap: 0.5rem;
 }
 
 #about-footer .links .social-media {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.5rem;
 }
 
-.social-media .button-footer {
-  display: block;
-  margin: 4rem 0;
-  width: fit-content;
-  border: 0.09375rem solid #1e4798;
-  padding: 0.2rem 1rem;
-  border-radius: 0.625rem;
+#about-footer .links .pages a,
+.social-media a {
   text-decoration: none;
-  color: #1e4798;
-  transition: background 0.3s;
-}
-
-#about-footer .social-media .button-footer {
-  color: #1e4798;
+  font-family: roboto-mono-regular;
+  font-variant: small-caps;
+  color: #202020;
   font-size: 15px;
 }
 
-#about-footer .social-media .button-footer:hover {
-  color: #f2f2f2;
-  background: #1e4798;
+#about-footer .links .pages a:hover,
+.social-media a:hover{
+    font-family: roboto-mono-medium;
+    color: #1e4798;
 }
+
+.social-media .button-footer {
+    font-family: roboto-mono-regular;
+    margin-top: 2.5rem;
+    border: 0.09375rem solid #1e4798;
+    padding: 0.3rem 1rem;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    color: #1e4798;
+    transition: background 0.3s;
+  }
+  
+  #about-footer .social-media .button-footer:hover {
+    font-family: roboto-mono-regular;
+    color: #f2f2f2;
+    background: #1e4798;
+  }
+
