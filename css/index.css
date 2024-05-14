@@ -290,7 +290,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.rightside .paragraph span{
+.rightside .paragraph span {
   color: #e34511;
   width: 85%;
 }
@@ -375,7 +375,7 @@ nav ul li a:hover::after {
   font-family: roboto-mono-bold;
   font-size: 46px;
   line-height: 51px;
-  color: #1E4798;
+  color: #202020;
 }
 
 #index-carousel .content .sentence {
@@ -459,44 +459,46 @@ nav ul li a:hover::after {
 }
 
 /*-------------------------------------section 6-------------------------------------*/
-
 #index-section6 {
   display: flex;
-  color: #202020;
   align-items: center;
-  gap: 7rem;
-  padding: 8% 15% 0 15%;
+  padding: 10% 15% 5% 15%;
+  gap: 5rem;
 }
 
-.esq6 img {
-  width: 100%;
-}
-
-.direita6 {
+#index-section6 .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.direita6 .titles h5 {
-  margin-top: 1rem;
+#index-section6 .content h2 {
+  font-family: roboto-mono-bold;
+  font-size: 46px;
+  line-height: 51px;
+  width: 50%;
+}
+
+#index-section6 .content .titles p {
+  margin-top: 20px;
+}
+
+#index-section6 p {
   font-family: roboto-mono-light;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-.direita6 h2 {
-  font-family: roboto-mono-bold;
-  font-size: 46px;
-  line-height: 51px;
+#index-section6 .content .sentences .underline {
+  text-decoration: underline 3px #f5c607;
 }
 
-.direita6 .section6-buttons {
+.index-buttons {
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
-.section6-buttons .button6 {
+.index-buttons .button6 {
   display: block;
   margin: 1.25rem 0;
   width: fit-content;
@@ -514,17 +516,6 @@ nav ul li a:hover::after {
 .button6:hover {
   color: #202020;
   background: #f5c607;
-}
-
-#index-section6 .direita6 .titles-bottom h5 {
-  font-family: roboto-mono-light;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-#index-section6 .titles-bottom .bold6 {
-  font-family: roboto-mono-bold;
-  text-decoration: underline 0.22rem #f5c607;
 }
 
 /*-------------------------------------------footer------------------------------------------*/

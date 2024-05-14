@@ -395,43 +395,46 @@ nav ul li a:hover::after {
 
 /*-------------------------------------------section 5-------------------------------------------*/
 
-#about-section5 {
+#about-section5{
   display: flex;
-  color: #202020;
   align-items: center;
-  gap: 7rem;
-  padding: 8% 15% 0 15%;
+  padding: 10% 15% 10% 15%;
+  gap: 5rem;
 }
 
-.esq6 img {
-  width: 100%;
-}
-
-.direita6 {
+#about-section5 .content{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.direita6 .titles h5 {
-  margin-top: 1rem;
-  font-family: roboto-mono-light;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.direita6 h2 {
+#about-section5 .content h2{
   font-family: roboto-mono-bold;
   font-size: 46px;
   line-height: 51px;
+  width: 50%;
 }
 
-.direita6 .section6-buttons {
+#about-section5 .content .titles p{
+margin-top: 20px;
+}
+
+#about-section5 p{
+font-family: roboto-mono-light;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+#about-section5 .content .sentences .underline{
+  text-decoration: underline 3px #f5c607;
+}
+
+.about-buttons{
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
-.section6-buttons .button6 {
+.about-buttons .button6 {
   display: block;
   margin: 1.25rem 0;
   width: fit-content;
@@ -449,17 +452,6 @@ nav ul li a:hover::after {
 .button6:hover {
   color: #202020;
   background: #f5c607;
-}
-
-#about-section5 .direita6 .titles-bottom h5 {
-  font-family: roboto-mono-light;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-#about-section5 .titles-bottom .bold6 {
-  font-family: roboto-mono-bold;
-  text-decoration: underline 0.22rem #f5c607;
 }
 
 /*-------------------------------------------footer------------------------------------------*/

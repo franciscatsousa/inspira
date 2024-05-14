@@ -46,189 +46,105 @@ nav ul li a:hover::after {
     font-weight: bold;
 }
 
-/*-------------------------------------section 2-------------------------------------*/
+/*-------------------------------------section 1-------------------------------------*/
 
 
-#about-section1 {
+#mentee-section1 {
     display: flex;
     padding: 10% 10% 10% 10%;
     justify-content: space-between;
     gap: 30px;
 }
 
-#about-section1 .titles {
+#mentee-section1 .titles {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 60%;
 }
 
-#about-section1 .titles h1 {
+#mentee-section1 .titles h1 {
     font-family: roboto-mono-bold;
     font-size: 60px;
     line-height: 65px;
 }
 
-#about-section1 .titles span {
+#mentee-section1 .titles span {
     font-family: roboto-mono-bold;
     text-transform: uppercase;
-    color: #e61854;
+    color: #E34511;
 
 }
 
-#about-section1 .titles h5 {
+#mentee-section1 .titles h5 {
     font-family: roboto-mono-light;
     font-size: 20px;
     text-transform: uppercase;
-    color: #e61854;
+    color: #E34511;
 }
 
-#about-section1 .content {
+#mentee-section1 .content {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     width: 90%;
 }
 
-#about-section1 .content .row {
+#mentee-section1 .content .row {
     display: flex;
     gap: 2rem;
 }
 
-#about-section1 .content .row img {
+#mentee-section1 .content .row img {
     width: 20%;
 }
 
-#about-section1 .content .row .text {
+#mentee-section1 .content .row .text {
     display: flex;
     flex-direction: column;
     font-size: 17px;
     gap: 0.7rem;
 }
 
-#about-section1 .content .row .text .paragraph {
+#mentee-section1 .content .row .text .paragraph {
     width: 95%;
 }
 
-#about-section1 .content .row .text .title {
+#mentee-section1 .content .row .text .title {
     color: #1e4798;
     width: 90%;
 }
 
-/*-------------------------------------section 3-------------------------------------*/
-
-
-#mentor-section2 {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 10% 10% 10% 10%;
-}
-
-#mentor-section2 h1 {
-    font-family: roboto-mono-bold;
-    font-size: 46px;
-    line-height: 51px;
-    color: #1E4798;
-    width: 50%;
-}
-
-.container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.mentors {
-    width: 90%;
-}
-
-.mentors button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-}
-
-.mentors button span {
-    font-family: roboto-mono-light;
-    text-transform: uppercase;
-    font-size: 20px;
-    width: 85%;
-}
-
-.mentors button.accordion {
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    padding: 15px 20px;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.2s linear;
-}
-
-button.accordion img {
-    padding: 0.5rem;
-    border: 1px solid #1E4798;
-    border-radius: 100%;
-    transform: rotate(-90deg);
-    transition: transform 0.25s linear;
-}
-
-button.accordion.is-open img {
-    transform: rotate(-270deg);
-}
-
-.accordion-content {
-    border-bottom: 1px solid #1E4798;
-    padding: 0 20px;
-    max-height: 0;
-    /* display: flex; */
-    overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
-}
-
-/* .accordion-content img{
-    width: 30%;
-    height: 30%;
-    padding: 20px 0;
-} */
-
-.accordion-content p {
-    padding: 20px 0;
-    width: 85%;
-}
-
 /*-------------------------------------section 4-------------------------------------*/
 
-#mentor-section3 {
+#mentee-section2 {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     padding: 10% 10% 10% 10%;
 }
 
-#mentor-section3 .sentence {
+#mentee-section2  .sentence {
     font-family: roboto-mono-light;
     font-size: 20px;
     text-transform: uppercase;
-    color: #1E4798;
+    color: #E34511;
     width: 22%;
 }
 
-#mentor-section3 .bottom{
+#mentee-section2  .bottom{
     margin-left: auto;
     text-align: end;
 } 
 
-#mentor-section3 .column-container {
+#mentee-section2  .column-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
     align-items: center;
 }
 
-#mentor-section3 .column-container .column {
+#mentee-section2  .column-container .column {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -236,26 +152,26 @@ button.accordion.is-open img {
     padding: 4rem 3rem;
 }
 
-#mentor-section3 .column-container .column .text {
+#mentee-section2  .column-container .column .text {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     position: relative;
 }
 
-#mentor-section3 .column-container .column img {
+#mentee-section2  .column-container .column img {
     width: 37px;
 }
 
-#mentor-section3 .column-container .column .text .bottom {
+#mentee-section2  .column-container .column .text .bottom {
     margin-left: auto;
 }
 
-#mentor-section3 .column-container .column .text p {
+#mentee-section2  .column-container .column .text p {
     text-align: center;
 }
 
-#mentor-section3 .column-container .column span {
+#mentee-section2  .column-container .column span {
     font-family: roboto-mono-light;
     font-size: 15px;
     text-transform: uppercase;
