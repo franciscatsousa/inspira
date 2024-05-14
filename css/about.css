@@ -50,162 +50,194 @@ nav ul li a:hover::after {
 
 #about-section1 {
   display: flex;
+  padding: 10% 10% 10% 10%;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+#about-section1 .titles {
+  position: relative;
+  width: 60%;
+}
+
+#about-section1 .titles h1 {
+  font-family: roboto-mono-bold;
+  font-size: 60px;
+  line-height: 65px;
+}
+
+#about-section1 .titles span {
+  font-family: roboto-mono-bold;
+  color: #1e4798;
+}
+
+#about-section1 .titles h5 {
+  position: absolute;
+  font-family: roboto-mono-light;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #1e4798;
+  bottom: 0;
+}
+
+#about-section1 .content {
+  display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 10% 10% 8% 10%;
+  width: 80%;
 }
 
-#about-section1 h1 {
-  font-family: roboto-mono-bold;
-  font-size: 46px;
-}
-
-#about-section1 h1 .underline {
-  font-family: roboto-mono-bold;
-  text-decoration: underline 0.22rem #1e4798;
-}
-
-#about-section1 .objetivos {
+#about-section1 .content .row {
   display: flex;
-  justify-content: space-evenly;
-  font-family: roboto-regular;
+  gap: 2rem;
+}
+
+#about-section1 .content .row img {
+  width: 20%;
+}
+
+#about-section1 .content .row .text {
+  display: flex;
+  flex-direction: column;
   font-size: 17px;
-  line-height: 20px;
-  gap: 5rem;
+  gap: 0.7rem;
 }
 
-#about-section1 .objetivos > div {
-  width: 28%;
+#about-section1 .content .row .text .paragraph {
+  width: 95%;
 }
 
-.objetivos-texto {
-  margin-top: 6%;
-}
-
-#about-section1 h5 {
-  font-family: roboto-mono-light;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-#about-section1 h5 span {
-  font-family: roboto-mono-medium;
-  text-decoration: underline 0.22rem #1e4798;
+#about-section1 .content .row .text .title {
+  color: #1e4798;
+  width: 95%;
 }
 
 /*-------------------------------------------section 2-------------------------------------------*/
-
-#about-carousel{
+#index-carousel {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding: 0 0 10% 0;
 }
 
-#about-carousel .carousel-container{
+#index-carousel .carousel-container {
   display: flex;
-  padding: 8% 10% 0 10%;
+  padding: 10% 10% 0 10%;
   justify-content: space-between;
   align-items: center;
 }
 
-#about-carousel .slide{
+#index-carousel .slide {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:5rem
+  gap: 5rem
 }
 
-#about-carousel .slide img{
+#index-carousel .slide img {
   width: 450px;
-  
+
 }
 
-#about-carousel .content{
+#index-carousel .content {
   display: flex;
   flex-direction: column;
-  gap: 1.3rem;
-  width: 390px;
+  gap: 1.5rem;
+  width: 420px;
 }
 
-#about-carousel .content .title{
+#index-carousel .content .title {
   font-family: roboto-mono-bold;
   font-size: 46px;
   line-height: 51px;
 }
 
-#about-carousel .content .sentence{
-  font-family:roboto-mono-light;
+#index-carousel .content .sentence {
+  font-family: roboto-mono-light;
   font-size: 20px;
   text-transform: uppercase;
   color: #E34511;
+  width: 80%;
 }
 
-#about-carousel .content .text{
+#index-carousel .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   font-size: 17px;
   line-height: 20px;
 }
 
-#about-carousel .content .text span{
+#index-carousel .content .text span {
+  color: #1E4798;
+}
+
+#index-carousel .content .text span{
   color: #E34511;
 }
 
-.button {
-display: block;
-width: fit-content;
-border: 0.09375rem solid #E34511;
-padding: 0.625rem 1.875rem;
-border-radius: 0.625rem;
-text-decoration: none;
-text-transform: uppercase;
-color: #E34511;
-transition: background 0.3s;
+#index-carousel .button {
+  display: block;
+  font-family: roboto-mono-regular;
+  text-transform: uppercase;
+  width: fit-content;
+  border: 1.5px solid #E34511;;
+  padding: 7px 20px;
+  border-radius: 17px;
+  text-decoration: none;
+  color: #E34511;
+  transition: background 0.3s;
 }
 
-.button:hover {
-color: #f2f2f2;
-background: #E34511;
+#index-carousel .button:hover {
+  color: #f2f2f2;
+  background: #E34511;
 }
 
 #prevButton,
 #nextButton {
-border: 2px solid #1e4798;
-padding: 0.5%;
-border-radius: 50%;
-cursor: pointer;
-display: flex; /* Flexbox to center the image inside */
-align-items: center;
-justify-content: center;
-transition: background 0.3s;
-transition: top 0.5s;
+  border: 2px solid #1e4798;
+  padding: 0.5%;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  /* Flexbox to center the image inside */
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  transition: top 0.5s;
 }
 
 #prevButton:hover,
 #nextButton:hover {
-background: rgba(30, 71, 152, 0.1);
+  background: rgba(30, 71, 152, 0.1);
 }
 
 .carousel-dots {
-display: flex; /* Ensure it's a block-level element */
-width: 100%; /* Ensure it spans the entire width */
-padding: 0; /* Remove any padding */
-justify-content: center; /* Center its children horizontally */
+  display: flex;
+  /* Ensure it's a block-level element */
+  width: 100%;
+  /* Ensure it spans the entire width */
+  padding: 0;
+  /* Remove any padding */
+  justify-content: center;
+  /* Center its children horizontally */
 }
 
 .dot {
-height: 0.8rem;
-width: 0.8rem;
-margin: 0 0.2rem;
-border-radius: 50%;
-display: inline-block;
-border: 1px solid #1e4798;
-transition: background-color 0.2s ease;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #1e4798;
+  transition: background-color 0.2s ease;
 }
 
 .active,
 .dot:hover {
-background-color: #1e4798;
+  background-color: #1e4798;
 }
-
 
 /*-------------------------------------------section 3-------------------------------------------*/
 
@@ -252,7 +284,7 @@ background-color: #1e4798;
   position: relative;
 }
 
-.member-photo:hover > .hover-content {
+.member-photo:hover>.hover-content {
   display: flex;
 }
 
@@ -340,6 +372,7 @@ background-color: #1e4798;
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -354,6 +387,7 @@ background-color: #1e4798;
   display: inline-block;
   animation: 30s slide infinite linear;
 }
+
 .logos-slide img {
   height: 5.5rem;
   margin: 0 4rem;
@@ -361,7 +395,7 @@ background-color: #1e4798;
 
 /*-------------------------------------------section 5-------------------------------------------*/
 
-#about-section6 {
+#about-section5 {
   display: flex;
   color: #202020;
   align-items: center;
@@ -401,43 +435,48 @@ background-color: #1e4798;
   display: block;
   margin: 1.25rem 0;
   width: fit-content;
-  border: 0.09375rem solid #f5c607;
-  padding: 0.625rem 1.875rem;
-  border-radius: 0.625rem;
+  border: 1.5px solid #f5c607;
+  padding: 7px 20px;
+  border-radius: 17px;
   text-decoration: none;
   font-family: roboto-mono-regular;
   font-weight: bold;
   text-transform: uppercase;
-  color: #f5c607;
+  color: #202020;
   transition: background 0.3s;
 }
 
 .button6:hover {
-  color: #f2f2f2;
+  color: #202020;
   background: #f5c607;
 }
 
-#about-section6 .direita6 .titles-bottom h5 {
+#about-section5 .direita6 .titles-bottom h5 {
   font-family: roboto-mono-light;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-#about-section6 .titles-bottom .bold6 {
+#about-section5 .titles-bottom .bold6 {
   font-family: roboto-mono-bold;
   text-decoration: underline 0.22rem #f5c607;
 }
 
 /*-------------------------------------------footer------------------------------------------*/
+#about-footer-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
-#about-footer {
+.about-footer {
   display: flex;
   align-items: flex-start;
   gap: 17.5rem;
   padding: 8% 15% 5% 15%;
 }
 
-#about-footer h2 {
+.about-footer h2 {
   font-family: roboto-mono-regular;
   color: #1e4798;
   font-size: 46px;
@@ -445,24 +484,24 @@ background-color: #1e4798;
   width: 30%;
 }
 
-#about-footer .links {
+.about-footer .links {
   display: flex;
   gap: 6rem;
 }
 
-#about-footer .links .pages {
+.about-footer .links .pages {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-#about-footer .links .social-media {
+.about-footer .links .social-media {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-#about-footer .links .pages a,
+.about-footer .links .pages a,
 .social-media a {
   text-decoration: none;
   font-family: roboto-mono-regular;
@@ -471,26 +510,33 @@ background-color: #1e4798;
   font-size: 15px;
 }
 
-#about-footer .links .pages a:hover,
-.social-media a:hover{
-    font-family: roboto-mono-medium;
-    color: #1e4798;
+.about-footer .links .pages a:hover,
+.social-media a:hover {
+  font-family: roboto-mono-medium;
+  color: #1e4798;
 }
 
 .social-media .button-footer {
-    font-family: roboto-mono-regular;
-    margin-top: 2.5rem;
-    border: 0.09375rem solid #1e4798;
-    padding: 0.3rem 1rem;
-    border-radius: 0.625rem;
-    text-decoration: none;
-    color: #1e4798;
-    transition: background 0.3s;
-  }
-  
-  #about-footer .social-media .button-footer:hover {
-    font-family: roboto-mono-regular;
-    color: #f2f2f2;
-    background: #1e4798;
-  }
+  font-family: roboto-mono-regular;
+  margin-top: 2.5rem;
+  border: 0.09375rem solid #1e4798;
+  padding: 0.3rem 1rem;
+  border-radius: 0.625rem;
+  text-decoration: none;
+  color: #1e4798;
+  transition: background 0.3s;
+}
 
+.about-footer .social-media .button-footer:hover {
+  font-family: roboto-mono-regular;
+  color: #f2f2f2;
+  background: #1e4798;
+}
+
+#about-footer-container .blue-line {
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  width: 100%;
+  background-color: #1e4798;
+}

@@ -49,115 +49,147 @@ nav ul li a:hover::after {
 /*-------------------------------------section 2-------------------------------------*/
 
 
-#about-carousel{
+#about-section1 {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-#about-carousel .carousel-container{
-    display: flex;
-    padding: 8% 10% 0 10%;
+    padding: 10% 10% 10% 10%;
     justify-content: space-between;
-    align-items: center;
+    gap: 30px;
 }
 
-#about-carousel .slide{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:5rem
-}
-
-#about-carousel .slide img{
-    width: 450px;
-    
-}
-
-#about-carousel .content{
+#about-section1 .titles {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 390px;
+    width: 60%;
 }
 
-#about-carousel .content .title{
+#about-section1 .titles h1 {
+    font-family: roboto-mono-bold;
+    font-size: 60px;
+    line-height: 65px;
+}
+
+#about-section1 .titles span {
+    font-family: roboto-mono-bold;
+    text-transform: uppercase;
+    color: #e61854;
+
+}
+
+#about-section1 .titles h5 {
+    font-family: roboto-mono-light;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #e61854;
+}
+
+#about-section1 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 90%;
+}
+
+#about-section1 .content .row {
+    display: flex;
+    gap: 2rem;
+}
+
+#about-section1 .content .row img {
+    width: 20%;
+}
+
+#about-section1 .content .row .text {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    gap: 0.7rem;
+}
+
+#about-section1 .content .row .text .paragraph {
+    width: 95%;
+}
+
+#about-section1 .content .row .text .title {
+    color: #1e4798;
+    width: 90%;
+}
+
+/*-------------------------------------section 3-------------------------------------*/
+
+
+#mentor-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10% 10% 10% 10%;
+}
+
+#mentor-section2 h1{
     font-family: roboto-mono-bold;
     font-size: 46px;
     line-height: 51px;
-    color:#1E4798;
+    color: #1E4798;
+    width: 50%;
 }
 
-#about-carousel .content .sentence{
-    font-family:roboto-mono-light;
-    font-size: 20px;
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.mentors {
+    width: 80%;
+    position: absolute;
+    right: 0;
+}
+
+.mentors button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.mentors button span {
+    font-family: roboto-mono-light;
     text-transform: uppercase;
-    color: #1E4798;
+    font-size: 20px;
+    width: 85%;
 }
 
-#about-carousel .content .text{
-    font-size: 17px;
-    line-height: 20px;
+.mentors button.accordion {
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
 }
 
-#about-carousel .content .text span{
-    color: #1E4798;
+button.accordion img {
+    padding: 0.5rem;
+    border: 1px solid #1E4798;
+    border-radius: 100%;
+    transform: rotate(-90deg);
+    transition: transform 0.25s linear;
 }
 
-.button {
-  display: block;
-  width: fit-content;
-  border: 0.09375rem solid #1e4798;
-  padding: 0.625rem 1.875rem;
-  border-radius: 0.625rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #1e4798;
-  transition: background 0.3s;
+button.accordion.is-open img {
+    transform: rotate(-270deg);
 }
 
-.button:hover {
-  color: #f2f2f2;
-  background: #1e4798;
+.accordion-content {
+    border-bottom: 1px solid #1E4798;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
 }
 
-#prevButton,
-#nextButton {
-  border: 2px solid #1e4798;
-  padding: 0.5%;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex; /* Flexbox to center the image inside */
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s;
-  transition: top 0.5s;
+.accordion-content p {
+    padding: 20px 0;
+    width: 85%;
 }
-
-#prevButton:hover,
-#nextButton:hover {
-  background: rgba(30, 71, 152, 0.1);
-}
-
-.carousel-dots {
-  display: flex; /* Ensure it's a block-level element */
-  width: 100%; /* Ensure it spans the entire width */
-  padding: 0; /* Remove any padding */
-  justify-content: center; /* Center its children horizontally */
-}
-
-.dot {
-  height: 0.8rem;
-  width: 0.8rem;
-  margin: 0 0.2rem;
-  border-radius: 50%;
-  display: inline-block;
-  border: 1px solid #1e4798;
-  transition: background-color 0.2s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #1e4798;
-}
-

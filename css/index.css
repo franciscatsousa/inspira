@@ -48,7 +48,7 @@ nav ul li a:hover::after {
 
 /*-------------------------------------section1-------------------------------------*/
 
-#index-section1{
+#index-section1 {
   display: flex;
   gap: 2rem;
   padding: 3% 10% 8% 10%;
@@ -56,20 +56,20 @@ nav ul li a:hover::after {
   justify-content: space-between;
 }
 
-#index-section1 .header-text{
+#index-section1 .header-text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-#index-section1 .header-text h1{
+#index-section1 .header-text h1 {
   font-family: roboto-mono-bold;
   font-size: 60px;
   line-height: 66px;
   width: 80%;
 }
 
-#index-section1 .header-text h5{
+#index-section1 .header-text h5 {
   font-family: roboto-mono-light;
   font-size: 20px;
   text-transform: uppercase;
@@ -83,6 +83,7 @@ nav ul li a:hover::after {
 }
 
 @keyframes words {
+
   0%,
   20% {
     content: "INSPIRED";
@@ -167,18 +168,24 @@ nav ul li a:hover::after {
   line-height: 51px;
 }
 
-#index-section2 .text-container p {
-  width: 90%;
-}
-
-#index-section2 .text-container .sentence {
-  color: #1E4798;
+#index-section2 .text-container .paragraph {
+  width: 85%;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 #index-section2 .text-container .calendar {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 20px;
+}
+
+#index-section2 .text-container .calendar .sentence {
+  color: #1E4798;
+  font-size: 17px;
+  width: 30%;
 }
 
 #index-section2 .button {
@@ -186,9 +193,9 @@ nav ul li a:hover::after {
   font-family: roboto-mono-regular;
   text-transform: uppercase;
   width: fit-content;
-  border: 0.09375rem solid #1e4798;
-  padding: 0.625rem 1.875rem;
-  border-radius: 0.625rem;
+  border: 1.5px solid #1e4798;
+  padding: 7px 20px;
+  border-radius: 17px;
   text-decoration: none;
   color: #1e4798;
   transition: background 0.3s;
@@ -202,85 +209,90 @@ nav ul li a:hover::after {
 /*-------------------------------------section 3-------------------------------------*/
 
 #index-section3 {
-  color: #202020;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 10rem;
   padding: 8% 15% 8% 15%;
+  justify-content: space-between;
+  gap: 11rem;
 }
 
-.esq3 {
-  position: relative;
-  width: 37.5%;
+#index-section3 .leftside {
+  width: 60%;
+}
+
+#index-section3 .leftside .quote {
   display: flex;
   flex-direction: column;
-}
-
-.direita3 {
-  width: 42%;
-}
-
-.title-direita3 {
-  font-size: 2.1875rem;
-  font-family: roboto-mono-medium;
-  font-weight: normal;
-  line-height: 40px;
-  color: #e34511;
-}
-
-.direita3 .paragraph {
-  width: 90%;
-}
-
-.esq3 .sentence1 {
-  font-weight: lighter;
-  text-transform: uppercase;
-  font-size: 1.125rem;
-  font-family: roboto-mono-light;
-}
-
-.esq3 .sentence2 {
-  font-weight: bold;
-  text-transform: uppercase;
+  gap: 30px;
   font-family: roboto-mono-regular;
-  font-size: 1.125rem;
-  color: #e34511;
-  margin-top: 1.5rem;
-}
-
-.title-esq3 {
   font-size: 35px;
   line-height: 40px;
-  font-family: roboto-mono-regular;
-  font-weight: lighter;
   text-transform: uppercase;
 }
 
-.title-esq3 .bold {
-  font-weight: bold;
+#index-section3 .leftside .bold {
+  font-family: roboto-mono-bold;
 }
 
-.title-esq3 .underline {
-  text-decoration: underline 0.22rem #e34511;
+#index-section3 .leftside .underline {
+  text-decoration: underline 4px #e34511;
 }
 
-.esq3 .aspas-top,
-.esq3 .aspas-bottom {
-  width: 25%;
+#index-section3 .leftside .sentences {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.esq3 .aspas-top {
-  margin-bottom: 2rem;
+#index-section3 .leftside .sentences .sentence1,
+.sentence2 {
+  font-family: roboto-mono-regular;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 60%;
 }
 
-.esq3 .container-aspas-bottom {
+#index-section3 .leftside .sentence2 {
+  color: #e34511;
   width: 100%;
 }
 
-.esq3 .aspas-bottom {
-  margin-top: 2rem;
+.leftside .aspas-top,
+.leftside .aspas-bottom {
+  width: 25%;
+}
+
+.leftside .aspas-bottom {
   float: right;
+}
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.rightside h1 {
+  font-family: roboto-mono-regular;
+  color: #e34511;
+  font-size: 35px;
+  line-height: 40px;
+  width: 80%;
+}
+
+.rightside .paragraph {
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.rightside .paragraph span{
+  color: #e34511;
+  width: 85%;
 }
 
 /*-------------------------------------section 4-------------------------------------*/
@@ -327,116 +339,123 @@ nav ul li a:hover::after {
 
 /*-------------------------------------section 5-------------------------------------*/
 
-#index-carousel{
+#index-carousel {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-#index-carousel .carousel-container{
+#index-carousel .carousel-container {
   display: flex;
   padding: 8% 10% 0 10%;
   justify-content: space-between;
   align-items: center;
 }
 
-#index-carousel .slide{
+#index-carousel .slide {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:5rem
+  gap: 5rem
 }
 
-#index-carousel .slide img{
+#index-carousel .slide img {
   width: 450px;
-  
+
 }
 
-#index-carousel .content{
+#index-carousel .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 390px;
+  gap: 1.5rem;
+  width: 420px;
 }
 
-#index-carousel .content .title{
+#index-carousel .content .title {
   font-family: roboto-mono-bold;
   font-size: 46px;
   line-height: 51px;
-  color:#1E4798;
-}
-
-#index-carousel .content .sentence{
-  font-family:roboto-mono-light;
-  font-size: 20px;
-  text-transform: uppercase;
   color: #1E4798;
 }
 
-#index-carousel .content .text{
+#index-carousel .content .sentence {
+  font-family: roboto-mono-light;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #1E4798;
+  width: 80%;
+}
+
+#index-carousel .content .text {
   font-size: 17px;
   line-height: 20px;
 }
 
-#index-carousel .content .text span{
+#index-carousel .content .text span {
   color: #1E4798;
 }
 
 #index-carousel .button {
-display: block;
-width: fit-content;
-border: 0.09375rem solid #1e4798;
-padding: 0.625rem 1.875rem;
-border-radius: 0.625rem;
-text-decoration: none;
-text-transform: uppercase;
-color: #1e4798;
-transition: background 0.3s;
+  display: block;
+  font-family: roboto-mono-regular;
+  text-transform: uppercase;
+  width: fit-content;
+  border: 1.5px solid #1e4798;
+  padding: 7px 20px;
+  border-radius: 17px;
+  text-decoration: none;
+  color: #1e4798;
+  transition: background 0.3s;
 }
 
 #index-carousel .button:hover {
-color: #f2f2f2;
-background: #1e4798;
+  color: #f2f2f2;
+  background: #1e4798;
 }
 
 #prevButton,
 #nextButton {
-border: 2px solid #1e4798;
-padding: 0.5%;
-border-radius: 50%;
-cursor: pointer;
-display: flex; /* Flexbox to center the image inside */
-align-items: center;
-justify-content: center;
-transition: background 0.3s;
-transition: top 0.5s;
+  border: 2px solid #1e4798;
+  padding: 0.5%;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  /* Flexbox to center the image inside */
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  transition: top 0.5s;
 }
 
 #prevButton:hover,
 #nextButton:hover {
-background: rgba(30, 71, 152, 0.1);
+  background: rgba(30, 71, 152, 0.1);
 }
 
 .carousel-dots {
-display: flex; /* Ensure it's a block-level element */
-width: 100%; /* Ensure it spans the entire width */
-padding: 0; /* Remove any padding */
-justify-content: center; /* Center its children horizontally */
+  display: flex;
+  /* Ensure it's a block-level element */
+  width: 100%;
+  /* Ensure it spans the entire width */
+  padding: 0;
+  /* Remove any padding */
+  justify-content: center;
+  /* Center its children horizontally */
 }
 
 .dot {
-height: 0.8rem;
-width: 0.8rem;
-margin: 0 0.2rem;
-border-radius: 50%;
-display: inline-block;
-border: 1px solid #1e4798;
-transition: background-color 0.2s ease;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #1e4798;
+  transition: background-color 0.2s ease;
 }
 
 .active,
 .dot:hover {
-background-color: #1e4798;
+  background-color: #1e4798;
 }
 
 /*-------------------------------------section 6-------------------------------------*/
@@ -481,19 +500,19 @@ background-color: #1e4798;
   display: block;
   margin: 1.25rem 0;
   width: fit-content;
-  border: 0.09375rem solid #f5c607;
-  padding: 0.625rem 1.875rem;
-  border-radius: 0.625rem;
+  border: 1.5px solid #f5c607;
+  padding: 7px 20px;
+  border-radius: 17px;
   text-decoration: none;
   font-family: roboto-mono-regular;
   font-weight: bold;
   text-transform: uppercase;
-  color: #f5c607;
+  color: #202020;
   transition: background 0.3s;
 }
 
 .button6:hover {
-  color: #f2f2f2;
+  color: #202020;
   background: #f5c607;
 }
 
@@ -509,7 +528,7 @@ background-color: #1e4798;
 }
 
 /*-------------------------------------------footer------------------------------------------*/
-#index-footer-container{
+#index-footer-container {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -557,32 +576,32 @@ background-color: #1e4798;
 }
 
 .index-footer .links .pages a:hover,
-.social-media a:hover{
-    font-family: roboto-mono-medium;
-    color: #1e4798;
+.social-media a:hover {
+  font-family: roboto-mono-medium;
+  color: #1e4798;
 }
 
 .social-media .button-footer {
-    font-family: roboto-mono-regular;
-    margin-top: 2.5rem;
-    border: 0.09375rem solid #1e4798;
-    padding: 0.3rem 1rem;
-    border-radius: 0.625rem;
-    text-decoration: none;
-    color: #1e4798;
-    transition: background 0.3s;
-  }
-  
-  .index-footer .social-media .button-footer:hover {
-    font-family: roboto-mono-regular;
-    color: #f2f2f2;
-    background: #1e4798;
-  }
+  font-family: roboto-mono-regular;
+  margin-top: 2.5rem;
+  border: 0.09375rem solid #1e4798;
+  padding: 0.3rem 1rem;
+  border-radius: 0.625rem;
+  text-decoration: none;
+  color: #1e4798;
+  transition: background 0.3s;
+}
 
-  #index-footer-container .blue-line{
-    position: absolute;
-    bottom: 0;
-    height:15px;
-    width: 100%;
-    background-color: #1e4798;
-  }
+.index-footer .social-media .button-footer:hover {
+  font-family: roboto-mono-regular;
+  color: #f2f2f2;
+  background: #1e4798;
+}
+
+#index-footer-container .blue-line {
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  width: 100%;
+  background-color: #1e4798;
+}
