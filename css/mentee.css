@@ -92,6 +92,7 @@ nav ul li a:hover::after {
 
 #mentee-section1 .content .row {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 

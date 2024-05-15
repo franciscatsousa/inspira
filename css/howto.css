@@ -48,6 +48,46 @@ nav ul li a:hover::after {
 
 /*-------------------------------------section 1-------------------------------------*/
 
+#howto-section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10% 15% 10% 15%;
+    gap: 7rem;
+}
+
+#howto-section1 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+#howto-section1 .content h2 {
+    font-family: roboto-mono-bold;
+    font-size: 46px;
+    line-height: 51px;
+    width: 90%;
+}
+
+#howto-section1 .content h5 {
+    font-family: roboto-mono-light;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #1E4798;
+}
+
+#howto-section1 .content .paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 17px;
+    width: 95%;
+}
+
+#howto-section1 .content .paragraph .bold {
+    font-family: roboto-medium;
+}
 
 /*-------------------------------------section 2-------------------------------------*/
 
@@ -136,5 +176,224 @@ button.accordion.is-open img {
 
 .accordion-content p {
     padding: 20px 0;
-    width: 85%;
+    width: 80%;
+}
+
+/*-------------------------------------section 3-------------------------------------*/
+
+#howto-section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 10% 10% 10% 10%;
+}
+
+#howto-section3 .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+#howto-section3 .titles h2,
+#howto-section3 .titles .orange {
+    font-family: roboto-mono-regular;
+    font-size: 35px;
+    line-height: 40px;
+    width: 60%;
+}
+
+#howto-section3 .titles .orange {
+    color: #E34511;
+}
+
+#howto-section3 .titles h5 {
+    font-family: roboto-mono-light;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #E34511;
+}
+
+form {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-left: auto;
+}
+
+.field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: roboto-mono-regular;
+    font-size: 25px;
+}
+
+input[type='text'] {
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid #E34511;
+    background-color: transparent;
+}
+
+input[type='submit'] {
+    align-self: flex-end;
+    font-family: roboto-mono-regular;
+    font-size: 18px;
+    padding: 7px 35px;
+    border: 1px solid #E34511;
+    border-radius: 17px;
+    color: #E34511;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+input[type='submit']:hover {
+    color: #f2f2f2;
+    background-color: #E34511;
+}
+
+
+/*-------------------------------------section 3-------------------------------------*/
+#howto-section4 {
+    display: flex;
+    align-items: center;
+    padding: 10% 15% 10% 15%;
+    gap: 5rem;
+}
+
+#howto-section4 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#howto-section4 .content h2 {
+    font-family: roboto-mono-bold;
+    font-size: 46px;
+    line-height: 51px;
+    width: 50%;
+}
+
+#howto-section4 .content .titles p {
+    margin-top: 20px;
+}
+
+#howto-section4 p {
+    font-family: roboto-mono-light;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#howto-section4 .content .sentences .underline {
+    text-decoration: underline 3px #f5c607;
+}
+
+.howto-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.howto-buttons .button6 {
+    display: block;
+    margin: 1.25rem 0;
+    width: fit-content;
+    border: 1.5px solid #f5c607;
+    padding: 7px 20px;
+    border-radius: 17px;
+    text-decoration: none;
+    font-family: roboto-mono-regular;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #202020;
+    transition: background 0.3s;
+}
+
+.button6:hover {
+    color: #202020;
+    background: #f5c607;
+}
+
+/*-------------------------------------------footer------------------------------------------*/
+#howto-footer-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.howto-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 17.5rem;
+    padding: 8% 15% 5% 15%;
+}
+
+.howto-footer h2 {
+    font-family: roboto-mono-regular;
+    color: #1e4798;
+    font-size: 46px;
+    line-height: 51px;
+    width: 30%;
+}
+
+.howto-footer .links {
+    display: flex;
+    gap: 6rem;
+}
+
+.howto-footer .links .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.howto-footer .links .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.howto-footer .links .pages a,
+.social-media a {
+    text-decoration: none;
+    font-family: roboto-mono-regular;
+    font-variant: small-caps;
+    color: #202020;
+    font-size: 15px;
+}
+
+.howto-footer .links .pages a:hover,
+.social-media a:hover {
+    font-family: roboto-mono-medium;
+    color: #1e4798;
+}
+
+.social-media .button-footer {
+    font-family: roboto-mono-regular;
+    margin-top: 2.5rem;
+    border: 0.09375rem solid #1e4798;
+    padding: 0.3rem 1rem;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    color: #1e4798;
+    transition: background 0.3s;
+}
+
+.howto-footer .social-media .button-footer:hover {
+    font-family: roboto-mono-regular;
+    color: #f2f2f2;
+    background: #1e4798;
+}
+
+#howto-footer-container .blue-line {
+    position: absolute;
+    bottom: 0;
+    height: 15px;
+    width: 100%;
+    background-color: #1e4798;
 }
