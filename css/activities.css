@@ -128,6 +128,112 @@ nav ul li a:hover::after {
 
 /*-------------------------------------------section 3-------------------------------------------*/
 
+#activities-section3 {
+  display: flex;
+  gap: 1rem;
+  padding: 10% 10% 10% 10%;
+}
+
+#activities-section3 .events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: auto;
+  width: 850px;
+  align-items: center;
+}
+
+#activities-section3 .events-container .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+
+#activities-section3 .title {
+  font-family: roboto-mono-regular;
+  font-size: 25px;
+  color: #1e4798;
+}
+
+#activities-section3 .events-container .row .event {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20% 5% 20% 10%;
+  border: 2px solid #1e4798;
+  border-radius: 10px;
+
+}
+
+#activities-section3 .events-container .event h5 {
+  font-family: roboto-mono-italic;
+  font-size: 25px;
+  line-height: 30px;
+  color: #e34511;
+  width: 20%;
+}
+
+#activities-section3 .events-container .event h4 {
+  font-family: roboto-mono-regular;
+  font-size: 25px;
+  line-height: 30px;
+  color: #1e4798;
+  width: 90%;
+}
+
+#activities-section3 .button {
+  display: block;
+  margin: 1.25rem 0;
+  width: fit-content;
+  border: 1.5px solid #1e4798;
+  padding: 7px 30px;
+  border-radius: 17px;
+  text-decoration: none;
+  font-family: roboto-mono-regular;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #1e4798;
+  transition: background 0.3s;
+}
+
+#activities-section3 .button:hover {
+  color: #f2f2f2;
+  background: #1e4798;
+}
+
+#activities-section3 #seemore {
+  width: fit-content;
+  border: 1.5px solid #e34511;
+  padding: 8px 20px;
+  border-radius: 17px;
+  text-decoration: none;
+  font-family: roboto-mono-regular;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #e34511;
+  transition: background 0.3s;
+}
+
+#activities-section3 #seemore:hover {
+  background: #e34511;
+  color: #f2f2f2;
+}
+
+#activities-section3 .events-container .more {
+  display: none;
+}
+
+#activities-section3 #seemore.disabled {
+  opacity: 0.3;
+  color: #202020;
+  border: 1.5px solid #202020;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+/*-------------------------------------------section 4-------------------------------------------*/
+
 #activities-section4 {
   display: flex;
   padding: 10% 10% 10% 10%;
@@ -152,41 +258,41 @@ nav ul li a:hover::after {
 
 
 /*-------------------------------------section 5-------------------------------------*/
-#activities-section5{
+#activities-section5 {
   display: flex;
   align-items: center;
   padding: 10% 15% 10% 15%;
   gap: 5rem;
 }
 
-#activities-section5 .content{
+#activities-section5 .content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-#activities-section5 .content h2{
+#activities-section5 .content h2 {
   font-family: roboto-mono-bold;
   font-size: 46px;
   line-height: 51px;
   width: 50%;
 }
 
-#activities-section5 .content .titles p{
-margin-top: 20px;
+#activities-section5 .content .titles p {
+  margin-top: 20px;
 }
 
-#activities-section5 p{
-font-family: roboto-mono-light;
-font-size: 20px;
-text-transform: uppercase;
+#activities-section5 p {
+  font-family: roboto-mono-light;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
-#activities-section5 .content .sentences .underline{
+#activities-section5 .content .sentences .underline {
   text-decoration: underline 3px #f5c607;
 }
 
-.activities-buttons{
+.activities-buttons {
   display: flex;
   gap: 20px;
 }

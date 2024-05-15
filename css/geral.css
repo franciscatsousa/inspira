@@ -23,6 +23,11 @@
   src: url("../fontes/RobotoMono-Light.ttf");
 }
 
+@font-face {
+  font-family: roboto-mono-italic;
+  src: url("../fontes/RobotoMono-Italic.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
