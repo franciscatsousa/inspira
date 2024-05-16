@@ -46,7 +46,9 @@ nav ul li a:hover::after {
   font-weight: bold;
 }
 
-
+nav ul li .activepage{
+  color: #e61854;
+}
 /*-------------------------------------------section 1-------------------------------------------*/
 
 #about-section1 {

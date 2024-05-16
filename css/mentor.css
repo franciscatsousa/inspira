@@ -194,10 +194,19 @@ button.accordion.is-open img {
     padding: 20px 0;
 } */
 
+
+.accordion-content {
+display: flex;
+}
+
 .accordion-content p {
     padding: 20px 0;
     width: 85%;
 }
+
+nav ul li .activepage{
+    color: #e61854;
+  }
 
 /*-------------------------------------section 4-------------------------------------*/
 

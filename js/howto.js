@@ -52,6 +52,7 @@ accordionBtns.forEach((accordion) => {
   };
 });
 
+
 (function () {
   // https://dashboard.emailjs.com/admin/account
   emailjs.init({

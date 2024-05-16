@@ -232,6 +232,10 @@ nav ul li a:hover::after {
   cursor: not-allowed;
 }
 
+nav ul li .activepage{
+  color: #e61854;
+}
+
 /*-------------------------------------------section 4-------------------------------------------*/
 
 #activities-section4 {

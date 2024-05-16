@@ -116,6 +116,10 @@ nav ul li a:hover::after {
     width: 90%;
 }
 
+nav ul li .activepage{
+  color: #e61854;
+}
+
 /*-------------------------------------section 4-------------------------------------*/
 
 #mentee-section2 {
