@@ -52,7 +52,7 @@ nav ul li a:hover::after {
 #index-section1 {
   display: flex;
   gap: 2rem;
-  padding: 3% 10% 8% 10%;
+  padding: 5% 10% 10% 10%;
   align-items: center;
   justify-content: space-between;
 }
@@ -127,7 +127,7 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8% 10% 8% 10%;
+  padding: 10% 10% 10% 10%;
   gap: 5rem;
 }
 
@@ -140,7 +140,7 @@ nav ul li a:hover::after {
   content: "";
   position: absolute;
   left: -10rem;
-  top: 54rem;
+  top: 59rem;
   height: 90%;
   width: 50%;
   background-color: #1e4798;
@@ -195,7 +195,7 @@ nav ul li a:hover::after {
   text-transform: uppercase;
   width: fit-content;
   border: 1.5px solid #1e4798;
-  padding: 7px 20px;
+  padding: 7px 25px;
   border-radius: 17px;
   text-decoration: none;
   color: #1e4798;
@@ -212,7 +212,7 @@ nav ul li a:hover::after {
 #index-section3 {
   display: flex;
   align-items: center;
-  padding: 8% 15% 8% 15%;
+  padding: 10% 15% 10% 15%;
   justify-content: space-between;
   gap: 11rem;
 }
@@ -247,7 +247,7 @@ nav ul li a:hover::after {
 
 #index-section3 .leftside .sentences .sentence1,
 .sentence2 {
-  font-family: roboto-mono-regular;
+  font-family: roboto-mono-light;
   font-size: 20px;
   line-height: 25px;
   text-transform: uppercase;
@@ -303,7 +303,7 @@ nav ul li a:hover::after {
   color: #1e4798;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 8% 0 8% 15%;
+  padding: 10% 0 10% 15%;
   gap: 7rem;
 }
 
@@ -311,6 +311,7 @@ nav ul li a:hover::after {
   font-size: 46px;
   font-family: roboto-mono-bold;
   line-height: 51px;
+  margin-bottom: 22px;
 }
 
 .direita4 .sec4-row {
@@ -335,7 +336,11 @@ nav ul li a:hover::after {
 .direita4 {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.direita4 .info{
+  font-size: 10px;
 }
 
 /*-------------------------------------section 5-------------------------------------*/
@@ -348,7 +353,7 @@ nav ul li a:hover::after {
 
 #index-carousel .carousel-container {
   display: flex;
-  padding: 8% 10% 0 10%;
+  padding: 10% 10% 0 10%;
   justify-content: space-between;
   align-items: center;
 }
@@ -402,7 +407,7 @@ nav ul li a:hover::after {
   text-transform: uppercase;
   width: fit-content;
   border: 1.5px solid #1e4798;
-  padding: 7px 20px;
+  padding: 7px 25px;
   border-radius: 17px;
   text-decoration: none;
   color: #1e4798;
@@ -463,7 +468,7 @@ nav ul li a:hover::after {
 #index-section6 {
   display: flex;
   align-items: center;
-  padding: 10% 15% 5% 15%;
+  padding: 20% 15% 5% 15%;
   gap: 5rem;
 }
 
