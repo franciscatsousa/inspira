@@ -1,31 +1,31 @@
 @font-face {
   font-family: roboto-regular;
-  src: url("../fontes/Roboto-Regular.ttf");
+  src: url('../fontes/Roboto-Regular.ttf');
 }
 
 @font-face {
   font-family: roboto-mono-bold;
-  src: url("../fontes/RobotoMono-Bold.ttf");
+  src: url('../fontes/RobotoMono-Bold.ttf');
 }
 
 @font-face {
   font-family: roboto-mono-medium;
-  src: url("../fontes/RobotoMono-Medium.ttf");
+  src: url('../fontes/RobotoMono-Medium.ttf');
 }
 
 @font-face {
   font-family: roboto-mono-regular;
-  src: url("../fontes/RobotoMono-Regular.ttf");
+  src: url('../fontes/RobotoMono-Regular.ttf');
 }
 
 @font-face {
   font-family: roboto-mono-light;
-  src: url("../fontes/RobotoMono-Light.ttf");
+  src: url('../fontes/RobotoMono-Light.ttf');
 }
 
 @font-face {
   font-family: roboto-mono-italic;
-  src: url("../fontes/RobotoMono-Italic.ttf");
+  src: url('../fontes/RobotoMono-Italic.ttf');
 }
 
 * {
@@ -39,4 +39,31 @@ body {
   background-color: #f2f2f2;
   color: #202020;
   overflow-x: hidden;
+}
+
+.section-title {
+  font-family: roboto-mono-bold;
+  font-size: 3rem;
+  line-height: 3.25rem;
+}
+
+.section-subtitle {
+  font-family: roboto-mono-light;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.section-title.blue,
+.section-subtitle.blue {
+  color: #1e4798;
+}
+
+.section-title.orange,
+.section-subtitle.orange {
+  color: #e34511;
+}
+
+.section-title.pink,
+.section-subtitle.pink {
+  color: #e61854;
 }

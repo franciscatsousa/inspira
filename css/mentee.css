@@ -1,53 +1,4 @@
-/*-------------------------------------navbar-------------------------------------*/
-
-nav {
-  padding: 1.25rem 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.logo {
-  width: 4.375rem;
-}
-
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0.625rem 1.25rem;
-}
-
-nav ul li a {
-  color: #202020;
-  text-decoration: none;
-  font-size: 1rem;
-  position: relative;
-}
-
-nav ul li a::after {
-  content: "";
-  width: 0;
-  height: 0.1875rem;
-  background: #e61854;
-  position: absolute;
-  left: 0;
-  bottom: -0.375rem;
-  transition: 0.4s;
-}
-
-nav ul li a:hover {
-  color: #e61854;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-  color: #e61854;
-  font-weight: bold;
-}
-
 /*-------------------------------------section 1-------------------------------------*/
-
 
 #mentee-section1 {
   display: flex;
@@ -72,15 +23,7 @@ nav ul li a:hover::after {
 #mentee-section1 .titles span {
   font-family: roboto-mono-bold;
   text-transform: uppercase;
-  color: #E34511;
-
-}
-
-#mentee-section1 .titles h5 {
-  font-family: roboto-mono-light;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #E34511;
+  color: #e34511;
 }
 
 #mentee-section1 .content {
@@ -125,7 +68,6 @@ nav ul li a:hover::after {
   width: 90%;
 }
 
-
 /*-------------------------------------section 4-------------------------------------*/
 
 #mentee-section2 {
@@ -139,7 +81,7 @@ nav ul li a:hover::after {
   font-family: roboto-mono-light;
   font-size: 20px;
   text-transform: uppercase;
-  color: #E34511;
+  color: #e34511;
   width: 22%;
 }
 
@@ -186,145 +128,5 @@ nav ul li a:hover::after {
   font-family: roboto-mono-light;
   font-size: 15px;
   text-transform: uppercase;
-  color: #1E4798;
-}
-
-/*-------------------------------------section 5-------------------------------------*/
-
-#mentor-section5 {
-  display: flex;
-  align-items: center;
-  padding: 8% 15% 10% 15%;
-  gap: 5rem;
-}
-
-#mentor-section5 .content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-#mentor-section5 .content h2 {
-  font-family: roboto-mono-bold;
-  font-size: 46px;
-  line-height: 51px;
-  width: 60%;
-}
-
-#mentor-section5 .content .titles p {
-  margin-top: 20px;
-}
-
-#mentor-section5 p {
-  font-family: roboto-mono-light;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-#mentor-section5 .content .sentences .underline {
-  text-decoration: underline 3px #f5c607;
-}
-
-.mentor-buttons {
-  display: flex;
-  gap: 20px;
-}
-
-.mentor-buttons .button6 {
-  display: block;
-  margin: 1.25rem 0;
-  width: fit-content;
-  border: 1.5px solid #f5c607;
-  padding: 7px 20px;
-  border-radius: 17px;
-  text-decoration: none;
-  font-family: roboto-mono-regular;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #202020;
-  transition: background 0.3s;
-}
-
-.button6:hover {
-  color: #202020;
-  background: #f5c607;
-}
-
-/*-------------------------------------------footer------------------------------------------*/
-#mentor-footer-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.mentor-footer {
-  display: flex;
-  align-items: flex-start;
-  gap: 17.5rem;
-  padding: 8% 15% 5% 15%;
-}
-
-.mentor-footer h2 {
-  font-family: roboto-mono-regular;
   color: #1e4798;
-  font-size: 46px;
-  line-height: 51px;
-  width: 30%;
-}
-
-.mentor-footer .links {
-  display: flex;
-  gap: 6rem;
-}
-
-.mentor-footer .links .pages {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.mentor-footer .links .social-media {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.mentor-footer .links .pages a,
-.social-media a {
-  text-decoration: none;
-  font-family: roboto-mono-regular;
-  font-variant: small-caps;
-  color: #202020;
-  font-size: 15px;
-}
-
-.mentor-footer .links .pages a:hover,
-.social-media a:hover {
-  font-family: roboto-mono-medium;
-  color: #1e4798;
-}
-
-.social-media .button-footer {
-  font-family: roboto-mono-regular;
-  margin-top: 2.5rem;
-  border: 0.09375rem solid #1e4798;
-  padding: 0.3rem 1rem;
-  border-radius: 0.625rem;
-  text-decoration: none;
-  color: #1e4798;
-  transition: background 0.3s;
-}
-
-.mentor-footer .social-media .button-footer:hover {
-  font-family: roboto-mono-regular;
-  color: #f2f2f2;
-  background: #1e4798;
-}
-
-#mentor-footer-container .blue-line {
-  position: absolute;
-  bottom: 0;
-  height: 15px;
-  width: 100%;
-  background-color: #1e4798;
 }
