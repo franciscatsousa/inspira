@@ -1,57 +1,35 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var currentLocation = window.location.pathname; // Get the current page path
   var links = document.querySelectorAll("nav ul li a");
 
   // Loop through each link and check if it matches the current page path
-  links.forEach(function(link) {
-      if (link.getAttribute("href") === currentLocation) {
-          link.classList.add("active"); // Add "active" class to the current page link
-      }
+  links.forEach(function (link) {
+    if (link.getAttribute("href") === currentLocation) {
+      link.classList.add("active"); // Add "active" class to the current page link
+    }
   });
 });
 
 function toggleTopic(topicId) {
-    const topicsButtons = document.querySelectorAll("#topics button");
-    const contentSections = document.querySelectorAll("#content .content");
-  
-    topicsButtons.forEach((button) => {
-      button.classList.remove("selected");
-    });
-  
-    contentSections.forEach((section) => {
-      section.classList.remove("selected");
-    });
-  
-    const clickedButton = document.getElementById(topicId);
-    const topicContent = document.getElementById(topicId + "-content");
-  
-    if (clickedButton && topicContent) {
-      clickedButton.classList.toggle("selected");
-      topicContent.classList.toggle("selected");
-    }
+  const topicsButtons = document.querySelectorAll("#topics button");
+  const contentSections = document.querySelectorAll("#content .content");
+
+  topicsButtons.forEach((button) => {
+    button.classList.remove("selected");
+  });
+
+  contentSections.forEach((section) => {
+    section.classList.remove("selected");
+  });
+
+  const clickedButton = document.getElementById(topicId);
+  const topicContent = document.getElementById(topicId + "-content");
+
+  if (clickedButton && topicContent) {
+    clickedButton.classList.toggle("selected");
+    topicContent.classList.toggle("selected");
   }
-
-
-const accordionBtns = document.querySelectorAll(".accordion");
-
-accordionBtns.forEach((accordion) => {
-  accordion.onclick = function () {
-    this.classList.toggle("is-open");
-
-    let content = this.nextElementSibling;
-    console.log(content);
-
-    if (content.style.maxHeight) {
-      //this is if the accordion is open
-      content.style.maxHeight = null;
-    } else {
-      //if the accordion is currently closed
-      content.style.maxHeight = content.scrollHeight + "px";
-      console.log(content.style.maxHeight);
-    }
-  };
-});
-
+}
 
 (function () {
   // https://dashboard.emailjs.com/admin/account
