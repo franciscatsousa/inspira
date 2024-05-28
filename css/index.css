@@ -207,6 +207,8 @@ nav ul li a:hover::after {
   background: #1e4798;
 }
 
+
+
 /*-------------------------------------section 3-------------------------------------*/
 
 #index-section3 {
@@ -339,7 +341,7 @@ nav ul li a:hover::after {
   gap: 1rem;
 }
 
-.direita4 .info{
+.direita4 .info {
   font-size: 10px;
 }
 
