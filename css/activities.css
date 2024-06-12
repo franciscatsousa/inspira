@@ -1,8 +1,8 @@
 /*-------------------------------------------section 1-------------------------------------------*/
 #activities-section1 {
   display: flex;
-  gap: 5rem;
-  padding: 5% 10% 10% 10%;
+  gap: 3rem;
+  padding: 2% 10% 10% 10%;
   align-items: center;
   justify-content: space-between;
 }
@@ -11,12 +11,34 @@
   font-family: roboto-mono-bold;
   font-size: 46px;
   line-height: 51px;
-  width: 35%;
 }
 
 #activities-section1 .underline {
   font-family: roboto-mono-bold;
   text-decoration: underline 0.22rem #e34511;
+}
+
+.arrow-icon {
+  width: 2rem;
+  margin-top: 10%;
+  margin-left: 40%;
+  height: auto;
+  position: relative;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
 /*-------------------------------------------section 2-------------------------------------------*/
