@@ -75,6 +75,7 @@
 #index-section1 .subtitle img {
   margin-left: 15%;
 }
+
 .arrow-icon {
   width: 2rem;
   height: auto;
@@ -165,22 +166,27 @@
   width: 30%;
 }
 
-#index-section2 .button {
+.button {
   display: block;
   font-family: roboto-mono-regular;
   text-transform: uppercase;
   width: fit-content;
   border: 1.5px solid #1e4798;
   padding: 7px 25px;
-  border-radius: 17px;
+  border-radius: 10px;
   text-decoration: none;
   color: #1e4798;
   transition: background 0.3s;
+  cursor: pointer;
 }
 
-#index-section2 .button:hover {
+ .button:hover {
   color: #f2f2f2;
   background: #1e4798;
+}
+
+#myModal .modal-content img {
+  width: 40px;
 }
 
 /*-------------------------------------section 3-------------------------------------*/
@@ -378,29 +384,7 @@ img {
   width: 85%;
 }
 
-.content .blue {
-  color: #1e4798;
-  width: 80%;
-}
-
-.content a {
-  padding: 0.5rem 1.25rem;
-  border: 1.5px solid #1e4798;
-  border-radius: 10px;
-  color: #1e4798;
-  font-family: roboto-mono-regular;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background 0.3s;
-}
-
-.content a:hover {
-  color: #f2f2f2;
-  background: #1e4798;
-}
-
 /*-------------------------------------section 5-------------------------------------*/
-
 
 
 #index-section6 {
