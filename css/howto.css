@@ -66,6 +66,34 @@
   display: block;
 }
 
+#content .accordion-content ul {
+  width: 85%;
+}
+
+.accordion-content .inspirational {
+  font-family: roboto-light;
+  color: #1E4798;
+}
+
+.accordion-content a {
+  color: #202020;
+}
+
+.accordion-content .source {
+  font-size: 12px;
+  color: #202020;
+}
+
+.accordion-content .subline {
+  padding: 2% 0 0 5%;
+  font-size: 15px;
+}
+
+.accordion-content .bold {
+  font-family: roboto-medium;
+  color: #1E4798;
+}
+
 /*-------------------------------------section 3-------------------------------------*/
 
 #howto-section3 {

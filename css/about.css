@@ -109,7 +109,7 @@
   position: relative;
 }
 
-.member-photo:hover > .hover-content {
+.member-photo:hover>.hover-content {
   display: flex;
 }
 
@@ -147,6 +147,25 @@
   text-align: center;
 }
 
+#about-section3 .former-members-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#about-section3 .former-members-container .headline{
+padding-left: 22%;
+text-transform: uppercase;
+color: #E61854;
+}
+
+#about-section3 .former-members {
+  display: flex;
+  justify-content: center;
+  column-gap: 8rem;
+}
+
+
 #about-section3 .blue-dir-container,
 #about-section3 .blue-esq-container {
   position: relative;
@@ -165,7 +184,7 @@
 
 #about-section3 .blue-dir {
   left: -10vw;
-  top: 30vh;
+  top: 80vh;
   width: 18.75rem;
 }
 
