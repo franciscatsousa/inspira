@@ -180,7 +180,7 @@
   cursor: pointer;
 }
 
- .button:hover {
+.button:hover {
   color: #f2f2f2;
   background: #1e4798;
 }
@@ -333,6 +333,10 @@
   font-family: roboto-mono-bold;
   font-size: 10px;
   text-transform: uppercase;
+}
+
+#index-section4 .direita4 .sec4-row .info .links {
+  color: #1e4798;
 }
 
 /*-------------------------------------section 5-------------------------------------*/
