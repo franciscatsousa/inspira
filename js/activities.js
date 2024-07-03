@@ -15,3 +15,14 @@ function myFunction() {
     btnText.classList.add('disabled'); // Optionally add a class for styling
   }
 }
+
+const scrollArrow = document.getElementById('scroll-arrow');
+
+if (scrollArrow) {
+  scrollArrow.addEventListener('click', function() {
+    const nextSection = document.getElementById('activities-section2');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}

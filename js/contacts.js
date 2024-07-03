@@ -25,4 +25,15 @@
         );
       });
   };
+
+  const scrollArrow = document.getElementById('scroll-arrow');
+
+if (scrollArrow) {
+  scrollArrow.addEventListener('click', function() {
+    const nextSection = document.querySelector('.contact-section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
   

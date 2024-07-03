@@ -81,6 +81,7 @@
   height: auto;
   position: relative;
   animation: jumpInfinite 1.5s infinite;
+  cursor: pointer;
 }
 
 @keyframes jumpInfinite {

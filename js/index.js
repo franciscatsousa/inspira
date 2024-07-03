@@ -18,6 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+const scrollArrow = document.getElementById('scroll-arrow');
+
+if (scrollArrow) {
+  scrollArrow.addEventListener('click', function() {
+    const nextSection = document.getElementById('index-section2');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+
 // document.addEventListener("DOMContentLoaded", function () {
 //     var modal = document.getElementById("myModal");
 //     var alert = document.getElementById("warning");

@@ -2,7 +2,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4rem;
+  gap: 3rem;
   margin-left: auto;
 }
 
@@ -18,10 +18,11 @@ label {
 }
 
 input[type='text'] {
-  padding: 0.5rem 0;
+  all: unset;
+  padding: 0.7rem 0;
   border: none;
   border-bottom: 1px solid #e34511;
-  background-color: transparent;
+  background-color: rgba(236, 184, 167, 0.2);
 }
 
 input[type='submit'] {
