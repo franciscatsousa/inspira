@@ -174,3 +174,22 @@
   text-transform: uppercase;
   color: #1e4798;
 }
+
+/*-------------------------------------call to action-------------------------------------*/
+
+.call-to-action .buttons-sign-up button {
+  margin: 1.25rem 0;
+  border: 1.5px solid #f5c607;
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  color: #202020;
+  font-family: roboto-mono-regular;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.call-to-action .buttons-sign-up button:hover {
+  background: #f5c607;
+}

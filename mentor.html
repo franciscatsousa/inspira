@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inspira</title>
   <link rel="stylesheet" href="css/geral.css" />
+  <link rel="stylesheet" href="css/warnings.css" />
   <link rel="stylesheet" href="css/mentor.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/navbar.css" />
@@ -276,9 +277,24 @@
         <p>by filling out the form</p>
       </div>
       <div class="buttons-sign-up">
-        <a href="https://ls.uc.pt/index.php/182886?lang=pt">
-          as a mentor
-        </a>
+        <button class="button" id="warning">as a mentor</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="warning">
+              <img src="imgs/warning.svg" alt="">
+              <div class="text">
+                <p class="title">Warning</p>
+                <p class="paragraph">Do you want to leave this page?</p>
+              </div>
+            </div>
+            <div class="options">
+              <a href="https://ls.uc.pt/index.php/182886?lang=pt" class="option">Yes</a>
+              <button class="close option">No</button>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -319,6 +335,7 @@
   </footer>
 
   <script src="js/accordion.js"></script>
+  <script src="js/warnings.js"></script>
 </body>
 
 </html>
