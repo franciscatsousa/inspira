@@ -2,7 +2,7 @@
 #activities-section1 {
   display: flex;
   gap: 3rem;
-  padding: 2% 10% 10% 10%;
+  padding: calc(2% + 5rem) 10% 10% 10%;
   align-items: center;
   justify-content: space-between;
 }

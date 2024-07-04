@@ -2,7 +2,7 @@
 
 #about-section1 {
   display: flex;
-  padding: 10% 10% 10% 10%;
+  padding: calc(10% + 5rem) 10% 10% 10%;
   justify-content: space-between;
   gap: 60px;
 }
@@ -66,28 +66,28 @@
 
 /*-------------------------------------------section 2-------------------------------------------*/
 
-#about-section2{
+#about-section2 {
   display: flex;
   flex-direction: column;
   padding: 10% 15% 10% 15%;
   gap: 2rem;
 }
 
-#about-section2 h1{
+#about-section2 h1 {
   font-family: roboto-mono-bold;
   font-size: 46px;
   line-height: 51px;
   color: #202020;
 }
 
-#about-section2 .orange{
+#about-section2 .orange {
   font-family: roboto-mono-bold;
   text-transform: uppercase;
   font-size: 46px;
-  color: #E34511;
+  color: #e34511;
 }
 
-.text-container{
+.text-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -95,42 +95,41 @@
   font-size: 17px;
 }
 
-.text-container .subtitle{
- font-size: 25px;
- font-family: roboto-mono-medium;
- color: #E34511;
+.text-container .subtitle {
+  font-size: 25px;
+  font-family: roboto-mono-medium;
+  color: #e34511;
 }
 
-.text-container .bold{
- font-family: roboto-bold;
- }
+.text-container .bold {
+  font-family: roboto-bold;
+}
 
-.text-container .left-text-container{
+.text-container .left-text-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width:55%;
+  width: 55%;
 }
 
-.text-container .right-text-container{
+.text-container .right-text-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width:50%;
+  width: 50%;
 }
 
-.text-container .right-text-container .join{
-color: #E34511;
+.text-container .right-text-container .join {
+  color: #e34511;
 }
 
-
-.text-container .right-text-container .activities{
+.text-container .right-text-container .activities {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.text-container img{
+.text-container img {
   width: 316px;
 }
 /*-------------------------------------------section 3-------------------------------------------*/
@@ -178,7 +177,7 @@ color: #E34511;
   position: relative;
 }
 
-.member-photo:hover>.hover-content {
+.member-photo:hover > .hover-content {
   display: flex;
 }
 
@@ -222,10 +221,10 @@ color: #E34511;
   gap: 1rem;
 }
 
-#about-section3 .former-members-container .headline{
-padding-left: 22%;
-text-transform: uppercase;
-color: #E61854;
+#about-section3 .former-members-container .headline {
+  padding-left: 22%;
+  text-transform: uppercase;
+  color: #e61854;
 }
 
 #about-section3 .former-members {
@@ -233,7 +232,6 @@ color: #E61854;
   justify-content: center;
   column-gap: 8rem;
 }
-
 
 #about-section3 .blue-dir-container,
 #about-section3 .blue-esq-container {

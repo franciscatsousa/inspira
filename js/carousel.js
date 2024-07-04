@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
     const dotsContainer = document.querySelector('.carousel-dots');
@@ -33,8 +33,10 @@
         slides.forEach(slide => {
             slide.style.display = 'none';
         });
-        slides[n].style.display = 'flex'; // Show the selected slide
-        updateDots();
+        if (slides[n]) {
+            slides[n].style.display = 'flex'; // Show the selected slide
+            updateDots();
+        }
     }
 
     function nextSlide() {
@@ -53,7 +55,7 @@
     const nextButton = document.getElementById('nextButton');
     const prevButton = document.getElementById('prevButton');
 
-    nextButton.addEventListener('click', nextSlide);
-    prevButton.addEventListener('click', prevSlide);
+    if (nextButton) nextButton.addEventListener('click', nextSlide);
+    if (prevButton) prevButton.addEventListener('click', prevSlide);
 });
 

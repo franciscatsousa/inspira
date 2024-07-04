@@ -3,7 +3,7 @@
 .hero {
   display: flex;
   align-items: center;
-  padding: 5% 15% 10% 15%;
+  padding: calc(5% + 5rem) 15% 10% 15%;
   gap: 5rem;
 }
 

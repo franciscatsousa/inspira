@@ -20,19 +20,19 @@
   <!--------------------------------------------- navbar --------------------------------------------->
 
 
-    <nav>
-      <a href="index.html">
-        <img src="imgs/logo_inspira.png" class="logo" alt="logotipo do inspira posicionado na navbar" />
-      </a>
-      <ul>
-        <li><a href="about.html">about</a></li>
-        <li><a href="activities.html">activities</a></li>
-        <li><a href="mentor.html">be a mentor</a></li>
-        <li><a href="mentee.html">be a mentee</a></li>
-        <li><a href="howto.html">how to</a></li>
-        <li><a href="contacts.html">contacts</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <a href="index.html">
+      <img src="imgs/logo_inspira.png" class="logo" alt="logotipo do inspira posicionado na navbar" />
+    </a>
+    <ul>
+      <li><a href="about.html">about</a></li>
+      <li><a href="activities.html">activities</a></li>
+      <li><a href="mentor.html">be a mentor</a></li>
+      <li><a href="mentee.html">be a mentee</a></li>
+      <li><a href="howto.html">how to</a></li>
+      <li><a href="contacts.html">contacts</a></li>
+    </ul>
+  </nav>
 
 
   <!--------------------------------------------- section1 --------------------------------------------->
@@ -83,23 +83,7 @@
       </div>
       <div class="calendar">
         <p class="sentence">Check out our activities calendar!</p>
-        <button class="button" id="warning">calendar</button>
-
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <div class="warning">
-              <img src="imgs/warning.svg" alt="">
-              <div class="text">
-                <p class="title">Warning</p>
-                <p>Do you want to leave this page?</p>
-              </div>
-            </div>
-            <div class="options">
-              <a href="activities.html#activities-section3" class="option">Yes</a>
-              <button class="close option">No</button>
-            </div>
-          </div>
-        </div>
+        <a href="activities.html#activities-section3" class="button">calendar</a>
       </div>
 
 
@@ -168,7 +152,8 @@
           </p>
           <div class="info">
             <p>Data sourced from <a
-                href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/women-in-tech-the-best-bet-to-solve-europes-talent-shortage" class="links">McKinsey
+                href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/women-in-tech-the-best-bet-to-solve-europes-talent-shortage"
+                class="links">McKinsey
                 & Company and DGES</a></p>
           </div>
         </div>
@@ -180,7 +165,8 @@
             Women specialising in the ICT sector companies in Portugal.
           </p>
           <div class="info">
-            <p>Data sourced from <a href="https://commission.europa.eu/index_en" class="links">European Commission data</a></p>
+            <p>Data sourced from <a href="https://commission.europa.eu/index_en" class="links">European Commission
+                data</a></p>
           </div>
         </div>
       </div>
@@ -191,7 +177,8 @@
             Women employed in ICT sector companies in Portugal.
           </p>
           <div class="info">
-            <p>Data sourced from <a href="https://commission.europa.eu/index_en" class="links">European Commission data</a></p>
+            <p>Data sourced from <a href="https://commission.europa.eu/index_en" class="links">European Commission
+                data</a></p>
           </div>
         </div>
       </div>
@@ -202,7 +189,9 @@
             Average innovation revenue reported by companies with above-average diversity.
           </p>
           <div class="info">
-            <p>Data sourced from <a href="https://www.bcg.com/publications/2018/how-diverse-leadership-teams-boost-innovation" class="links">here</a></p>
+            <p>Data sourced from <a
+                href="https://www.bcg.com/publications/2018/how-diverse-leadership-teams-boost-innovation"
+                class="links">here</a></p>
           </div>
         </div>
       </div>
@@ -227,7 +216,7 @@
           </div>
           <div class="blue">Join us as we navigate career paths and explore opportunities in the tech industry!</div>
         </div>
-        <a href="https://www.youtube.com/channel/UCl_JZ0itrOvx-bkV0IajFZQ" class="button">our youtube</a>
+        <button class="button warning-button" id="warning1">our youtube</button>
       </div>
       <img src="imgs/youtube.svg" alt="composição dos posts do instagram do Inspira" />
     </div>
@@ -251,7 +240,7 @@
         </div>
         <div class="blue">Follow us for a mix of inspiration and information!</div>
       </div>
-      <a href="https://www.instagram.com/inspira_dei_uc/" class="button">our instagram</a>
+      <button class="button warning-button" id="warning2">our instagram</button>
     </div>
   </div>
 
@@ -311,8 +300,41 @@
     <div class="blue-line"></div>
   </footer>
 
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="warning">
+        <img src="imgs/warning.svg" alt="">
+        <div>
+          <p class="title">Warning</p>
+          <p>Do you want to leave this page?</p>
+        </div>
+      </div>
+      <div class="options">
+        <a href="https://www.youtube.com/channel/UCl_JZ0itrOvx-bkV0IajFZQ" class="option">Yes</a>
+        <button id="close1" class="option">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="warning">
+        <img src="imgs/warning.svg" alt="">
+        <div>
+          <p class="title">Warning</p>
+          <p>Do you want to leave this page?</p>
+        </div>
+      </div>
+      <div class="options">
+        <a href="https://www.instagram.com/inspira_dei_uc/" class="option">Yes</a>
+        <button id="close2" class="option">No</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/carousel.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/warnings.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 7rem;
-  padding: 5% 15% 10% 15%;
+  padding: calc(5% + 5rem) 15% 10% 15%;
 }
 
 #howto-section1 .content {
@@ -72,7 +72,7 @@
 
 .accordion-content .inspirational {
   font-family: roboto-light;
-  color: #1E4798;
+  color: #1e4798;
 }
 
 .accordion-content a {
@@ -91,7 +91,7 @@
 
 .accordion-content .bold {
   font-family: roboto-medium;
-  color: #1E4798;
+  color: #1e4798;
 }
 
 /*-------------------------------------section 3-------------------------------------*/
