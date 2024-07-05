@@ -29,6 +29,7 @@
 }
 
 @keyframes words {
+
   0%,
   20% {
     content: 'INSPIRED';
@@ -99,29 +100,34 @@
 
 /*-------------------------------------section 2-------------------------------------*/
 
+.test{
+  display: flex;
+  align-items: center;
+}
+
 #index-section2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10% 10% 10% 10%;
   gap: 5rem;
+  position: relative;
 }
+
+.test .test-blue-line {
+  width: 40%;
+  height: 90%;
+  background-color: #1e4798;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+} 
 
 #index-section2 .foto img {
   width: 100%;
   position: relative;
 }
 
-.foto::before {
-  content: '';
-  position: absolute;
-  left: -10rem;
-  top: 58.5rem;
-  height: 90%;
-  width: 50%;
-  background-color: #1e4798;
-  z-index: -1;
-}
 
 #index-section2 .text-container {
   display: flex;

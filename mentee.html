@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/mentee.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/warnings.css" />
     <link rel="stylesheet" href="css/call-to-action.css" />
     <link rel="icon" type="image/x-icon" href="imgs/logo-branco-inspira.png">
 </head>
@@ -25,7 +26,7 @@
                 <li><a href="activities.html">activities</a></li>
                 <li><a href="mentor.html">be a mentor</a></li>
                 <li><a href="mentee.html" class="activepage">be a mentee</a></li>
-                <li><a href="howto.html">how to</a></li>
+                <li><a href="howto.html">tips4life</a></li>
                 <li><a href="contacts.html">contacts</a></li>
             </ul>
         </nav>
@@ -35,8 +36,12 @@
 
     <div id="mentee-section1">
         <div class="titles">
-            <h1>Be an <br><span>inspira</span><br>mentee</h1>
-            <h5 class="section-subtitle orange">consider the following</h5>
+            <h1>Be an <br /><span>inspira</span><br />mentee</h1>
+            <div class="subtitle">
+                <p>Consider the following,</p>
+                <p>Or sign up now</p>
+                <button class="call-action-button warning-button" id="warning1">as a mentee</button>
+            </div>
         </div>
         <div class="content">
             <div class="row">
@@ -105,7 +110,8 @@
             <div class="column">
                 <div class="text">
                     <img src="imgs/open-blue-marks.svg" alt="">
-                    <p>Being a mentor in the INSPIRA program has been an experience that has exceeded my expectations on every level. </p>
+                    <p>Being a mentor in the INSPIRA program has been an experience that has exceeded my expectations on
+                        every level. </p>
                     <img src="imgs/close-blue-marks.svg" alt="" class="bottom">
                 </div>
                 <span>Adriana Ramalho</span>
@@ -123,8 +129,8 @@
                 <p>by filling out the form</p>
             </div>
             <div class="buttons-sign-up">
-                <a href="https://ls.uc.pt/index.php/298188?lang=pt">as a mentee</a>
-            </div>
+                <button class="button warning-button" id="warning2">as a mentee</button>
+              </div>
         </div>
     </section>
 
@@ -140,7 +146,7 @@
                     <a href="activities.html">activities</a>
                     <a href="mentor.html">be a mentor</a>
                     <a href="mentee.html">be a mentee</a>
-                    <a href="howto.html">how to</a>
+                    <a href="howto.html">tips4life</a>
                     <a href="contacts.html">contacts</a>
                 </div>
                 <div class="links-content">
@@ -163,5 +169,38 @@
         <div class="blue-line"></div>
     </footer>
 
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+          <div class="warning">
+            <img src="imgs/warning.svg" alt="">
+            <div>
+              <p class="title">Warning</p>
+              <p>Do you want to leave this page?</p>
+            </div>
+          </div>
+          <div class="options">
+            <a href="https://ls.uc.pt/index.php/298188?lang=pt" class="option">Yes</a>
+            <button id="close1" class="option">No</button>
+          </div>
+        </div>
+      </div>
+    
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <div class="warning">
+            <img src="imgs/warning.svg" alt="">
+            <div>
+              <p class="title">Warning</p>
+              <p>Do you want to leave this page?</p>
+            </div>
+          </div>
+          <div class="options">
+            <a href="https://ls.uc.pt/index.php/298188?lang=pt" class="option">Yes</a>
+            <button id="close2" class="option">No</button>
+          </div>
+        </div>
+      </div>
+
     <script src="js/mentor.js"></script>
+    <script src="js/warnings.js"></script>
 </body>

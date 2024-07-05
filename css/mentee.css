@@ -26,6 +26,19 @@
   color: #e34511;
 }
 
+#mentee-section1 .subtitle{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+#mentee-section1 .subtitle p{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: roboto-mono-light;
+  color: #e34511;
+}
+
 #mentee-section1 .content {
   display: flex;
   flex-direction: column;
@@ -66,6 +79,27 @@
 #mentee-section1 .content .row .text .title {
   color: #1e4798;
   width: 90%;
+}
+
+.call-action-button {
+  border: 1.5px solid #e34511;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  width: 8rem;
+  border-radius: 10px;
+  color: #e34511;
+  font-family: roboto-mono-regular;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.call-action-button:hover {
+  background: #e34511;
+  color: #ffffff;
 }
 
 /*-------------------------------------section 4-------------------------------------*/
@@ -131,4 +165,25 @@
   font-size: 15px;
   text-transform: uppercase;
   color: #1e4798;
+}
+
+/*-------------------------------------call to action-------------------------------------*/
+
+.call-to-action .buttons-sign-up button {
+  margin: 1.25rem 0;
+  border: 1.5px solid #f5c607;
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  color: #202020;
+  font-family: roboto-mono-regular;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.call-to-action .buttons-sign-up button:hover {
+  background: #f5c607;
 }
