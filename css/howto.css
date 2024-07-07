@@ -109,7 +109,7 @@
   gap: 2.5rem;
 }
 
-#howto-section3 .titles h2 {
+#howto-section3 .titles h2, span {
   font-family: roboto-mono-regular;
   font-size: 35px;
   line-height: 40px;
