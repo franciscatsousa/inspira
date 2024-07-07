@@ -4,6 +4,16 @@
 }
 
 @font-face {
+  font-family: roboto-bold;
+  src: url('../fontes/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: roboto-medium;
+  src: url('../fontes/Roboto-Medium.ttf');
+}
+
+@font-face {
   font-family: roboto-mono-bold;
   src: url('../fontes/RobotoMono-Bold.ttf');
 }

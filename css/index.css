@@ -60,7 +60,7 @@
 
   81%,
   100% {
-    content: 'ASSERTIVE';
+    content: 'INCLUDED';
     font-family: roboto-mono-bold;
     color: #e61854;
   }
@@ -152,7 +152,7 @@
 }
 
 #index-section2 .text-container .paragraph {
-  width: 90%;
+  width: 95%;
   font-size: 17px;
   display: flex;
   flex-direction: column;
@@ -168,7 +168,7 @@
 #index-section2 .text-container .calendar .sentence {
   color: #1e4798;
   font-size: 17px;
-  width: 30%;
+  width: 35%;
 }
 
 .button {
@@ -279,7 +279,7 @@
 }
 
 .rightside .paragraph span {
-  color: #e34511;
+  font-family: roboto-medium;
   width: 85%;
 }
 
@@ -347,7 +347,7 @@
 /*-------------------------------------section 5-------------------------------------*/
 
 #index-section5 {
-  padding: 10% 10% 10% 15%;
+  padding: 10% 10% 5% 15%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -383,14 +383,9 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.content .paragraph {
-  display: flex;
-  flex-direction: column;
   font-size: 1rem;
   line-height: 1.25rem;
-  width: 85%;
+  width: 90%;
 }
 
 /*-------------------------------------section 5-------------------------------------*/
@@ -417,12 +412,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.content .paragraph {
-  display: flex;
-  flex-direction: column;
   font-size: 1rem;
   line-height: 1.25rem;
   width: 90%;
 }
+
