@@ -82,3 +82,7 @@ body {
 .section-subtitle.pink {
   color: #e61854;
 }
+
+.bold{
+  font-family: roboto-medium;
+}

@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/call-to-action.css" />
   <link rel="stylesheet" href="css/accordion.css" />
-  <link rel="stylesheet" href="css/warnings.css" />
   <link rel="icon" type="image/x-icon" href="imgs/logo-branco-inspira.png" />
 </head>
 
@@ -28,7 +27,7 @@
         <li><a href="mentor.html" class="activepage">be a mentor</a></li>
         <li><a href="mentee.html">be a mentee</a></li>
         <li><a href="howto.html">tips4life</a></li>
-        <li><a href="contacts.html">contacts</a></li>
+        <li><a href="contacts.html">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -41,7 +40,7 @@
       <div class="subtitle">
         <p>Consider the following,</p>
         <p>Or sign up now</p>
-        <button class="call-action-button warning-button" id="warning1">as a mentor</button>
+        <button class="call-action-button warning-button" onclick="redirectToSignUp();">as a mentor</button>
       </div>
     </div>
     <div class="content">
@@ -274,17 +273,17 @@
   <!--------------------------------------------- section 5 --------------------------------------------->
 
   <section class="call-to-action">
-    <img src="imgs/yellow.svg" alt="" />
+    <img src="imgs/yellow.svg" alt="">
     <div class="content">
-      <div>
-        <h2>Join us<br>and become<br>a mentor</h2>
-        <p>by filling out the form</p>
-      </div>
-      <div class="buttons-sign-up">
-        <button class="button warning-button" id="warning2">as a mentor</button>
-      </div>
+        <div class="sign-up">
+            <h2>Join us and become a mentor</h2>
+            <p>By filling out the form</p>
+            <div class="buttons-sign-up">
+                <button class="warning-button" onclick="SignUpMentor();">as a mentor</button>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
   <!--------------------------------------------- footer --------------------------------------------->
 
@@ -299,7 +298,7 @@
           <a href="mentor.html">be a mentor</a>
           <a href="mentee.html">be a mentee</a>
           <a href="howto.html">tips4life</a>
-          <a href="contacts.html">contacts</a>
+          <a href="contacts.html">contact</a>
         </div>
         <div class="links-content">
           <a href="https://www.instagram.com/inspira_dei_uc/">instagram</a>
@@ -312,8 +311,8 @@
           <a href="https://www.facebook.com/profile.php?id=100083283895905">
             facebook
           </a>
-          <a href="mailto:inspira@dei.uc.pt" class="footer-button">
-            inspira@gmail.com
+          <a href="mailto:inspira.uc.dei@gmail.com" class="footer-button">
+            inspira@dei.uc.pt
           </a>
         </div>
       </div>
@@ -321,39 +320,8 @@
     <div class="blue-line"></div>
   </footer>
 
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <div class="warning">
-        <img src="imgs/warning.svg" alt="">
-        <div>
-          <p class="title">Warning</p>
-          <p>To sign up you will be redirected to a form on an external page.</p>
-        </div>
-      </div>
-      <div class="options">
-        <a href="https://ls.uc.pt/index.php/182886?lang=pt" class="option">Ok</a>
-        <button id="close1" class="option">Cancel</button>
-      </div>
-    </div>
-  </div>
-
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <div class="warning">
-        <img src="imgs/warning.svg" alt="">
-        <div>
-          <p class="title">Warning</p>
-          <p>To sign up you will be redirected to a form on an external page.</p>
-        </div>
-      </div>
-      <div class="options">
-        <a href="https://ls.uc.pt/index.php/182886?lang=pt" class="option">Ok</a>
-        <button id="close2" class="option">Cancel</button>
-      </div>
-    </div>
-  </div>
-
   <script src="js/accordion.js"></script>
+  <script src="js/mentor.js"></script>
   <script src="js/warnings.js"></script>
 </body>
 

@@ -32,7 +32,7 @@
                 <li><a href="mentor.html">be a mentor</a></li>
                 <li><a href="mentee.html">be a mentee</a></li>
                 <li><a href="howto.html" class="activepage">tips4life</a></li>
-                <li><a href="contacts.html">contacts</a></li>
+                <li><a href="contacts.html">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -61,7 +61,7 @@
     <section class="faqs">
         <div id="topics">
             <button id="first" onclick="toggleTopic(this.id)" class="selected">
-                The beginning
+                The Beginning
             </button>
             <button id="second" onclick="toggleTopic(this.id)">
                 Bachelors
@@ -516,10 +516,11 @@
                                 <li>The Informatics Student Association's <a href="https://nei.dei.uc.pt/">(NEI)</a>
                                     also hosts an annual event called ‘Talks with Former Students', where current
                                     students can engage in discussions with
-                                    alumni from different degrees, providing firsthand experiences and guidance.</li><br>
+                                    alumni from different degrees, providing firsthand experiences and guidance.</li>
+                                <br>
                                 <li><a href="https://raparigasdocodigo.pt/">As Raparigas do Código</a>
                                     also provide content about ICT careers on their social media and organize
-                                    workshops, for women, on career management!"</li>
+                                    workshops, for women, on career management!</li>
                             </ul>
                         </div>
                     </div>
@@ -533,7 +534,8 @@
 
     <div id="howto-section3">
         <div class="titles">
-            <h2>We want to explore <span class="orange2">frequently asked</span> student <span class="orange2">questions</span></h2>
+            <h2>We want to explore <span class="orange2">frequently asked</span> student <span
+                    class="orange2">questions</span></h2>
             <h5 class="section-subtitle orange">let us know yours!</h5>
         </div>
         <form id="contact-form">
@@ -558,17 +560,18 @@
     <section class="call-to-action">
         <img src="imgs/yellow.svg" alt="">
         <div class="content">
-            <div>
-                <h2>Want to<br>join us?</h2>
-                <p>sign up here</p>
+            <div class="sign-up">
+                <h2>Want to join us?</h2>
+                <p>sign up now</p>
+                <div class="buttons-sign-up">
+                    <button class="warning-button" onclick="SignUpMentee();">as a mentee</button>
+                    <button class="warning-button" onclick="SignUpMentor();">as a mentor</button>
+                </div>
             </div>
-            <div class="buttons-sign-up">
-                <a href="mentee.html">as a mentee</a>
-                <a href="mentor.html">as a mentor</a>
-            </div>
             <div>
-                <p>Want to find out more?</p>
-                <p class="underline">keep scrolling...</p>
+                <p class="bold">Want to find out more?</p>
+                <p>check our <a class="underline" href="mentee.html">mentee page</a> | <a class="underline"
+                        href="mentor.html">mentor page</a> </span></p>
             </div>
         </div>
     </section>
@@ -586,7 +589,7 @@
                     <a href="mentor.html">be a mentor</a>
                     <a href="mentee.html">be a mentee</a>
                     <a href="howto.html">tips4life</a>
-                    <a href="contacts.html">contacts</a>
+                    <a href="contacts.html">contact</a>
                 </div>
                 <div class="links-content">
                     <a href="https://www.instagram.com/inspira_dei_uc/">instagram</a>
@@ -599,8 +602,8 @@
                     <a href="https://www.facebook.com/profile.php?id=100083283895905">
                         facebook
                     </a>
-                    <a href="mailto:inspira@dei.uc.pt" class="footer-button">
-                        inspira@gmail.com
+                    <a href="mailto:inspira.uc.dei@gmail.com" class="footer-button">
+                        inspira@dei.uc.pt
                     </a>
                 </div>
             </div>
@@ -610,4 +613,5 @@
 
     <script src="js/accordion.js"></script>
     <script src="js/howto.js"></script>
+    <script src="js/warnings.js"></script>
 </body>

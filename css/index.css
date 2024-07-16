@@ -143,7 +143,7 @@
   line-height: 51px;
 }
 
-#index-section2 .text-container span {
+#index-section2 .text-container .inspira {
   font-family: roboto-mono-bold;
   font-size: 46px;
   color: #1e4798;
@@ -324,7 +324,7 @@
   font-family: roboto-mono-light;
   font-size: 20px;
   line-height: 22px;
-  width: 75%;
+  width: 80%;
   text-transform: uppercase;
 }
 

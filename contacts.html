@@ -30,7 +30,7 @@
         <li><a href="mentor.html">be a mentor</a></li>
         <li><a href="mentee.html">be a mentee</a></li>
         <li><a href="howto.html">tips4life</a></li>
-        <li><a href="contacts.html" class="activepage">contacts</a></li>
+        <li><a href="contacts.html" class="activepage">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -72,21 +72,21 @@
   </section>
 
   <!--------------------------------------------- call-to-action --------------------------------------------->
-
   <section class="call-to-action">
     <img src="imgs/yellow.svg" alt="">
     <div class="content">
-      <div>
-        <h2>Want to<br>join us?</h2>
-        <p>sign up here</p>
+      <div class="sign-up">
+        <h2>Want to join us?</h2>
+        <p>sign up now</p>
+        <div class="buttons-sign-up">
+          <button class="warning-button" onclick="SignUpMentee();">as a mentee</button>
+          <button class="warning-button" onclick="SignUpMentor();">as a mentor</button>
+        </div>
       </div>
-      <div class="buttons-sign-up">
-        <a href="mentee.html">as a mentee</a>
-        <a href="mentor.html">as a mentor</a>
-      </div>
       <div>
-        <p>Want to find out more?</p>
-        <p class="underline">keep scrolling...</p>
+        <p class="bold">Want to find out more?</p>
+        <p>check our <a class="underline" href="mentee.html">mentee page</a> | <a class="underline"
+            href="mentor.html">mentor page</a> </span></p>
       </div>
     </div>
   </section>
@@ -104,7 +104,7 @@
           <a href="mentor.html">be a mentor</a>
           <a href="mentee.html">be a mentee</a>
           <a href="howto.html">tips4life</a>
-          <a href="contacts.html">contacts</a>
+          <a href="contacts.html">contact</a>
         </div>
         <div class="links-content">
           <a href="https://www.instagram.com/inspira_dei_uc/">instagram</a>
@@ -117,8 +117,8 @@
           <a href="https://www.facebook.com/profile.php?id=100083283895905">
             facebook
           </a>
-          <a href="mailto:inspira@dei.uc.pt" class="footer-button">
-            inspira@gmail.com
+          <a href="mailto:inspira.uc.dei@gmail.com" class="footer-button">
+            inspira@dei.uc.pt
           </a>
         </div>
       </div>
@@ -128,6 +128,7 @@
 
 
   <script src="js/contacts.js"></script>
+  <script src="js/warnings.js"></script>
 </body>
 
 </html>
