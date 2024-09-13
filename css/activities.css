@@ -158,6 +158,22 @@
   width: 90%;
 }
 
+#activities-section3 .disable {
+  pointer-events: none;
+  cursor: not-allowed;
+  display: block;
+  margin: 1.25rem 0;
+  width: fit-content;
+  border: 1.5px solid gray;
+  padding: 7px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: roboto-mono-regular;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: gray
+}
+
 #activities-section3 .button {
   display: block;
   margin: 1.25rem 0;
