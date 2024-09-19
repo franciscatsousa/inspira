@@ -63,8 +63,8 @@
 .content .paragraph {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  width: 90%;
+  gap: 1rem;
+  width: 80%;
   font-size: 17px;
   line-height: 20px;
 }

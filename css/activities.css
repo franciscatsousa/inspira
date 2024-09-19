@@ -104,14 +104,23 @@
 }
 
 /*-------------------------------------------section 3-------------------------------------------*/
+:root {
+  --primary-color: #1e4798; /* Default primary color */
+  /* --background: transparent; */
+}
 
-#activities-section3 {
+#activities-section3-2 {
+  --primary-color: #202020; /* Override primary color for this section */
+  /* --background: #dbdbdb; */
+}
+
+.activities-section {
   display: flex;
   gap: 1rem;
   padding: 10% 10% 10% 10%;
 }
 
-#activities-section3 .events-container {
+.activities-section .events-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -120,29 +129,30 @@
   align-items: center;
 }
 
-#activities-section3 .events-container .row {
+.activities-section .events-container .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
 }
 
-#activities-section3 .title {
+.activities-section .title {
   font-family: roboto-mono-regular;
   font-size: 25px;
-  color: #1e4798;
+  color: var(--primary-color); 
 }
 
-#activities-section3 .events-container .row .event {
+.activities-section .events-container .row .event {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
   padding: 20% 5% 20% 10%;
-  border: 2px solid #1e4798;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
+  /* background-color: var(--background); ; */
 }
 
-#activities-section3 .events-container .event h5 {
+.activities-section .events-container .event h5 {
   font-family: roboto-mono-italic;
   font-size: 25px;
   line-height: 30px;
@@ -150,19 +160,25 @@
   width: 20%;
 }
 
-#activities-section3 .events-container .event h4 {
+.activities-section .events-container .event h4 {
   font-family: roboto-mono-regular;
   font-size: 25px;
   line-height: 30px;
-  color: #1e4798;
+  color: var(--primary-color); 
+  width: 100%;
+}
+
+.activities-section .events-container .event .soon {
+  font-family: roboto-mono-regular;
+  font-size: 13px;
+  color: var(--primary-color); 
   width: 90%;
 }
 
-#activities-section3 .disable {
+.activities-section .disable {
   pointer-events: none;
   cursor: not-allowed;
   display: block;
-  margin: 1.25rem 0;
   width: fit-content;
   border: 1.5px solid gray;
   padding: 7px 25px;
@@ -171,30 +187,34 @@
   font-family: roboto-mono-regular;
   font-size: 13px;
   text-transform: uppercase;
-  color: gray
+  color: gray;
 }
 
-#activities-section3 .button {
+.activities-section .button {
   display: block;
-  margin: 1.25rem 0;
   width: fit-content;
-  border: 1.5px solid #1e4798;
+  border: 1.5px solid var(--primary-color); 
   padding: 7px 25px;
   border-radius: 10px;
   text-decoration: none;
   font-family: roboto-mono-regular;
   font-size: 13px;
   text-transform: uppercase;
-  color: #1e4798;
+  color: var(--primary-color); 
   transition: background 0.3s;
 }
 
-#activities-section3 .button:hover {
+.activities-section .button:hover {
   color: #f2f2f2;
-  background: #1e4798;
+  background: var(--primary-color); 
 }
 
-#activities-section3 #seemore {
+.activities-section .events-container .more {
+  display: none;
+}
+
+#seemore3,
+#seemore3-2 {
   width: fit-content;
   border: 1.5px solid #e34511;
   padding: 7px 25px;
@@ -207,17 +227,15 @@
   transition: background 0.3s;
 }
 
-#activities-section3 #seemore:hover {
+#seemore3:hover,
+#seemore3-2:hover {
   background: #e34511;
   color: #f2f2f2;
   cursor: pointer;
 }
 
-#activities-section3 .events-container .more {
-  display: none;
-}
-
-#activities-section3 #seemore.disabled {
+#seemore3.disabled,
+#seemore3-2.disabled {
   opacity: 0.3;
   color: #202020;
   border: 1.5px solid #202020;
