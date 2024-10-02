@@ -85,6 +85,25 @@
   color: #1e4798;
 }
 
+.content .signup {
+  display: block;
+  width: fit-content;
+  border: 1.5px solid #1e4798; 
+  padding: 7px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: roboto-mono-regular;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #1e4798; 
+  transition: background 0.3s;
+}
+
+.content .signup:hover {
+  color: #f2f2f2;
+  background: #1e4798; 
+}
+
 .content .signin {
   text-decoration: none;
   cursor: not-allowed;
